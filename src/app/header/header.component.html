@@ -1,0 +1,165 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Sports Home</a>
+    <button class="navbar-toggler" type="button" (click)="collapsed = !collapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="sports">Sports</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="sports/soccer">Soccer</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" (click)="dropdown = !dropdown" (window:resize)="dropdown = false">
+            Soccer
+          </a>
+          <ul class="dropdown-menu" [class.show]="dropdown">
+            <li><a class="dropdown-item" (touchend)="showSublevel(england)">England &raquo;</a>
+              <ul class="submenu dropdown-menu" #england>
+                <li><a class="dropdown-item" (touchend)="showSublevel(england1)">Premier League &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #england1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2016">2016/17</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2017">2017/18</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2018">2018/19</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2019">2019/20</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-1-2021">2021/22</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" (touchend)="showSublevel(england2)">Championship &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #england2>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-2-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-2-2021">2021/22</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" (touchend)="showSublevel(england3)">League One &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #england3>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-3-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-3-2021">2021/22</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" (touchend)="showSublevel(england4)">League Two &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #england4>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-eng-4-2021">2021/22</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(finland)">Finland &raquo;</a>
+              <ul class="submenu dropdown-menu" #finland>
+                <li><a class="dropdown-item" (touchend)="showSublevel(finland1)">Veikkausliiga &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #finland1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-fin-1-2021">2021</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(france)">France &raquo;</a>
+              <ul class="submenu dropdown-menu" #france>
+                <li><a class="dropdown-item" (touchend)="showSublevel(france1)">Ligue 1 &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #france1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-fra-1-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-fra-1-2021">2021/22</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(germany)">Germany &raquo;</a>
+              <ul class="submenu dropdown-menu" #germany>
+                <li><a class="dropdown-item" (touchend)="showSublevel(germany1)">1. Bundesliga &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #germany1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2016">2016/17</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2017">2017/18</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2018">2018/19</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2019">2019/20</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-1-2021">2021/22</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" (touchend)="showSublevel(germany2)">2. Bundesliga &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #germany2>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ger-2-2021">2021/22</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(italy)">Italy &raquo;</a>
+              <ul class="submenu dropdown-menu" #italy>
+                <li><a class="dropdown-item" (touchend)="showSublevel(italy1)">Serie A &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #italy1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2016">2016/17</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2017">2017/18</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2018">2018/19</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2019">2019/20</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-ita-1-2021">2021/22</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(norway)">Norway &raquo;</a>
+              <ul class="submenu dropdown-menu" #norway>
+                <li><a class="dropdown-item" (touchend)="showSublevel(norway1)">Eliteserien &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #norway1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-nor-1-2021">2021</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(spain)">Spain &raquo;</a>
+              <ul class="submenu dropdown-menu" #spain>
+                <li><a class="dropdown-item" (touchend)="showSublevel(spain1)">La Liga &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #spain1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2016">2016/17</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2017">2017/18</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2018">2018/19</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2019">2019/20</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2020">2020/21</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-esp-1-2021">2021/22</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(sweden)">Sweden &raquo;</a>
+              <ul class="submenu dropdown-menu" #sweden>
+                <li><a class="dropdown-item" (touchend)="showSublevel(sweden1)">Allsvenskan &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #sweden1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-swe-1-2021">2021</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(turkey)">Turkey &raquo;</a>
+              <ul class="submenu dropdown-menu" #turkey>
+                <li><a class="dropdown-item" (touchend)="showSublevel(turkey1)">Süper Lig &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #turkey1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-tur-1-2021">2021</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" (touchend)="showSublevel(usa)">USA &raquo;</a>
+              <ul class="submenu dropdown-menu" #usa>
+                <li><a class="dropdown-item" (touchend)="showSublevel(usa1)">MLS &raquo;</a>
+                  <ul class="submenu dropdown-menu" (click)="dropdown = false" #usa1>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-usa-1-2020">2020</a></li>
+                    <li><a class="dropdown-item" routerLink="sports/soccer/league/soccer-usa-1-2021">2021</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="sports/basketball">Basketball</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

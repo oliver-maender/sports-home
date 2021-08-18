@@ -1,0 +1,24 @@
+<div class="fixtures my-5 mx-lg-3">
+  <div class="game-container" *ngFor="let game of games; let i = index" (click)="showMatchDetails(i)">
+    <div class="date-container p-2">
+      <span>{{ game.date | date: 'dd.MM.yyyy' }}</span>
+      <br>
+      <span>{{ game.date | date: 'HH:mm' }}</span>
+    </div>
+    <div class="home-logo-container p-1">
+      <img [src]="game.logoHome">
+    </div>
+    <div class="home-name p-1" style="text-align: center;">
+      <span>{{ game.home }}</span>
+    </div>
+    <div class="result p-1">
+      <span>{{ game.fulltimeHome }} : {{ game.fulltimeAway }}</span>
+    </div>
+    <div class="away-name p-1" style="text-align: center;">
+      <span>{{ game.away }}</span>
+    </div>
+    <div class="away-logo-container p-1">
+      <img [src]="game.logoAway">
+    </div>
+  </div>
+</div>

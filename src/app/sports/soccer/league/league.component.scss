@@ -1,0 +1,107 @@
+app-fixtures {
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+app-match-details {
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.fixtures-and-standings {
+  display: flex;
+  justify-content: space-around;
+
+  @media(max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.fixtures-and-match-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-responsive table tbody td img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.gameday-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameday-selection {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.current-team-home {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+.current-team-away {
+  background-color: rgba(40, 130, 200, 0.4);
+}
+
+.g1 {
+  background-color: rgb(0, 120, 0);
+}
+
+.g2 {
+  background-color: rgb(0, 180, 0)
+}
+
+.g3 {
+  background-color: rgb(0, 0, 120);
+}
+
+.g4 {
+  background-color: rgb(0, 0, 220);
+}
+
+.g5 {
+  background-color: rgb(128, 128, 128);
+}
+
+.rel2 {
+  background-color: rgb(200, 0, 0);
+}
+
+.rel {
+  background-color: rgb(120, 0, 0);
+}
+
+.white-text {
+  color: white;
+}
+
+.ta-c-w-50 {
+  text-align: center;
+  width: 50px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.betterS {
+  color: green;
+}
+
+.worseS {
+  color: red;
+}

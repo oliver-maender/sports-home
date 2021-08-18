@@ -1,0 +1,80 @@
+<div class="fixtures-and-standings">
+  <div class="fixtures-and-match-details my-3">
+    <div class="season-selection">
+      <button type="button" class="btn btn-secondary btn-sm me-2 ta-c-w-50" (click)="changeSeason(-1)">&lt;</button>
+      <span>{{ leagueDetails.season }}/{{ +leagueDetails.season + 1 - 2000 }}</span>
+      <button type="button" class="btn btn-secondary btn-sm ms-2 ta-c-w-50" (click)="changeSeason(1)">&gt;</button>
+    </div>
+
+    <app-fixtures></app-fixtures>
+
+    <div class="gameday-view">
+      <span>Gameday</span>
+      <div class="gameday-selection">
+        <button type="button" class="btn btn-secondary me-2 ta-c-w-50" (click)="changeGameday(1)">&laquo;</button>
+        <button type="button" class="btn btn-secondary me-2 ta-c-w-50"
+          (click)="changeGameday(leagueDetails.gameday - 1)">&lt;</button>
+        <input (change)="changeGameday(+selectedGameday.value)" [value]="leagueDetails.gameday"
+          class="ms-2 me-2 ta-c-w-50" #selectedGameday>
+        <button type="button" class="btn btn-secondary ms-2 ta-c-w-50"
+          (click)="changeGameday(leagueDetails.gameday + 1)">&gt;</button>
+        <button type="button" class="btn btn-secondary ms-2 ta-c-w-50"
+          (click)="changeGameday(leagueDetails.gamedays)">&raquo;</button>
+      </div>
+    </div>
+
+    <app-match-details *ngIf="showMatchDetails"
+      (changeStandingsEvent)="changeStandings($event.index, $event.homeGoals, $event.awayGoals)"
+      (changeHalftimeEvent)="changeHalftime($event.index, $event.homeHalftimeGoals, $event.awayHalftimeGoals)"
+      (changeStats)="changeStats($event.index, $event.possessionHome, $event.possessionAway, $event.shotsHome, $event.shotsAway, $event.shotsOnGoalHome, $event.shotsOnGoalAway, $event.cornersHome, $event.cornersAway)"
+      (closeMatchDetailsEvent)="closeMatchDetails()">
+    </app-match-details>
+
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped align-middle">
+      <thead>
+        <tr>
+          <th class="ta-c" scope="col">Pos</th>
+          <th class="ta-c" scope="col"></th>
+          <th class="ta-c" scope="col"></th>
+          <th class="ta-r" scope="col">Team</th>
+          <th class="d-none d-lg-table-cell ta-c" scope="col">GP</th>
+          <th class="ta-c" scope="col">W</th>
+          <th class="ta-c" scope="col">D</th>
+          <th class="ta-c" scope="col">L</th>
+          <th class="ta-c" scope="col">GF:GA</th>
+          <th class="d-none d-lg-table-cell ta-c" scope="col">GD</th>
+          <th class="ta-c" scope="col">Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let standing of standings; let i = index" [class.current-team-home]="standing.current === 'home'"
+          [class.current-team-away]="standing.current === 'away'">
+          <td [class.g1]="leagueDetails.specialPos[i] === 'g1'" [class.g2]="leagueDetails.specialPos[i] === 'g2'"
+            [class.g3]="leagueDetails.specialPos[i] === 'g3'" [class.g4]="leagueDetails.specialPos[i] === 'g4'"
+            [class.g5]="leagueDetails.specialPos[i] === 'g5'" [class.rel2]="leagueDetails.specialPos[i] === 'rel2'"
+            [class.rel]="leagueDetails.specialPos[i] === 'rel'" [class.white-text]="leagueDetails.specialPos[i]"
+            class="ta-c">{{ i+1 }}
+          </td>
+          <td class="ta-c" *ngIf="changedStandings[i] === 0">-</td>
+          <td class="ta-c betterS" *ngIf="changedStandings[i] > 0">&#9650; +{{ changedStandings[i] }}</td>
+          <td class="ta-c worseS" *ngIf="changedStandings[i] < 0">&#9660; {{ changedStandings[i] }}</td>
+          <td class="ta-c"><img [src]="standing.logo"></td>
+          <td class="ta-r">{{ standing.team }}</td>
+          <td class="d-none d-lg-table-cell ta-c">{{ standing.gamesPlayed }}</td>
+          <td class="ta-c">{{ standing.wins }}</td>
+          <td class="ta-c">{{ standing.draws }}</td>
+          <td class="ta-c">{{ standing.losses }}</td>
+          <td class="ta-c">{{ standing.gf }}:{{ standing.ga }}</td>
+          <td class="d-none d-lg-table-cell ta-c">{{ standing.gd }}</td>
+          <td class="ta-c">{{ standing.points }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="penalties-container" *ngIf="leagueDetails.hasPenalties">
+      <p *ngFor="let penalty of leagueDetails.penalties">{{ penalty.team }} - {{ penalty.points }} points deducted</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sports-home-828d0": {
+      "hosting": {
+        "sports-home": [
+          "sports-home-828d0"
+        ]
+      }
+    }
+  }
+}

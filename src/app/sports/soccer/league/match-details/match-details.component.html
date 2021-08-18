@@ -1,0 +1,77 @@
+<div class="my-5 pt-1 pb-1 px-2 mx-lg-3 match-details-container">
+  <div class="pb-3 close-button-container">
+    <button class="btn btn-danger" (click)="closeMatchDetails()">&#88;</button>
+  </div>
+  <div class="date-container p-2">
+    <input type="date" [(ngModel)]="dateComponents.inputDate" (change)="changeDate(i)">
+    <input type="time" [(ngModel)]="dateComponents.inputTime" (change)="changeDate(i)">
+  </div>
+  <div class="main-container">
+    <div class="logo-container me-3">
+      <img [src]="homeLogo" alt="">
+    </div>
+    <span class="ta-c-w-100">{{ home }}</span>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="homeGoals">
+    <span>:</span>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="awayGoals">
+    <span class="ta-c-w-100">{{ away }}</span>
+    <div class="logo-container ms-3">
+      <img [src]="awayLogo" alt="">
+    </div>
+  </div>
+  <div class="second-row-container">
+    <span>(</span>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="homeHalftimeGoals">
+    <span>:</span>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="awayHalftimeGoals">
+    <span>)</span>
+  </div>
+  <div class="stats-row-container my-2">
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="possessionHome" (keyup)="calculateStats()">
+    <div class="statistics-bar">
+      <span>Possession</span>
+      <div class="progress" style="width: 100%;">
+        <div class="progress-bar bg-success" [ngStyle]="{'width': possessionHome > 0 ? possessionHome + '%' : 50 + '%'}">{{ (possessionHome > 0 ? possessionHome : 50) | number: '1.0-0' }}%</div>
+        <div class="progress-bar" [ngStyle]="{'width': possessionAway > 0 ? possessionAway + '%' : 50 + '%'}">{{ (possessionAway > 0 ? possessionAway : 50) | number: '1.0-0' }}%</div>
+      </div>
+    </div>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="possessionAway" (keyup)="calculateStats()">
+  </div>
+  <div class="stats-row-container my-2">
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsHome" (keyup)="calculateStats()">
+    <div class="statistics-bar">
+      <span>Shots</span>
+      <div class="progress" style="width: 100%;">
+        <div class="progress-bar bg-success" [ngStyle]="{'width': shots > 0 ? shotsHome / shots * 100 + '%' : 50 + '%'}">{{ (shots > 0 ? shotsHome / shots * 100 : 50) | number: '1.0-0' }}%</div>
+        <div class="progress-bar" [ngStyle]="{'width': shots > 0 ? shotsAway / shots * 100 + '%' : 50 + '%'}">{{ (shots > 0 ? shotsAway / shots * 100 : 50) | number: '1.0-0' }}%</div>
+      </div>
+    </div>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsAway" (keyup)="calculateStats()">
+  </div>
+  <div class="stats-row-container my-2">
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsOnGoalHome" (keyup)="calculateStats()">
+    <div class="statistics-bar">
+      <span>Shots On Goal</span>
+      <div class="progress" style="width: 100%;">
+        <div class="progress-bar bg-success" [ngStyle]="{'width': shotsOnGoal > 0 ? shotsOnGoalHome / shotsOnGoal * 100 + '%' : 50 + '%'}">{{ (shotsOnGoal > 0 ? shotsOnGoalHome / shotsOnGoal * 100 : 50) | number: '1.0-0' }}%</div>
+        <div class="progress-bar" [ngStyle]="{'width': shotsOnGoal > 0 ? shotsOnGoalAway / shotsOnGoal * 100 + '%' : 50 + '%'}">{{ (shotsOnGoal > 0 ? shotsOnGoalAway / shotsOnGoal * 100 : 50) | number: '1.0-0' }}%</div>
+      </div>
+    </div>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsOnGoalAway" (keyup)="calculateStats()">
+  </div>
+  <div class="stats-row-container my-2">
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="cornersHome" (keyup)="calculateStats()">
+    <div class="statistics-bar">
+      <span>Corners</span>
+      <div class="progress" style="width: 100%;">
+        <div class="progress-bar bg-success" [ngStyle]="{'width': corners > 0 ? cornersHome / corners * 100 + '%' : 50 + '%'}">{{ (corners > 0 ? cornersHome / corners * 100 : 50) | number: '1.0-0' }}%</div>
+        <div class="progress-bar" [ngStyle]="{'width': corners > 0 ? cornersAway / corners * 100 + '%' : 50 + '%'}">{{ (corners > 0 ? cornersAway / corners * 100 : 50) | number: '1.0-0' }}%</div>
+      </div>
+    </div>
+    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="cornersAway" (keyup)="calculateStats()">
+  </div>
+  <div class="pt-3 check-button-container">
+    <button class="btn btn-success"
+      (click)="changeStandings(i, homeGoals, awayGoals); changeHalftime(i, homeHalftimeGoals, awayHalftimeGoals); saveStats(i); closeMatchDetails()">&#10003;</button>
+  </div>
+</div>
