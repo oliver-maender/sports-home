@@ -13,6 +13,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /**
+   * This shows the submenu for the menu elements the user is currently hovering over.
+   *
+   * @param {HTMLUListElement} element - The menu element which should get opened
+   */
   showSublevel(element: HTMLUListElement) {
     element.classList.toggle('show');
   }

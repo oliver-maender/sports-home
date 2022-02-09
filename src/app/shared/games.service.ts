@@ -30,8 +30,6 @@ export class GamesService {
     hasPenalties: false
   };
 
-  // leagueName = '';
-
   showMatchDetails = false;
   matchDetails = {
     i: 0,
@@ -119,7 +117,6 @@ export class GamesService {
     for (let i = 0; i < this.leagueDetails.gamedays; i++) {
       gamedaysArray.push([]);
     }
-    console.log(gamedaysArray);
     return this.http
       .get(
         `https://v3.football.api-sports.io/fixtures?league=${this.leagueDetails.leagueId}&season=${this.leagueDetails.season}`,
@@ -128,37 +125,31 @@ export class GamesService {
       .pipe(
         take(1),
         map((responseData: any) => {
-          let additionalGamedays = this.leagueDetails.gamedays;
-          let lastRoundName = '';
+          // let additionalGamedays = this.leagueDetails.gamedays;
+          // let lastRoundName = '';
 
           for (let i = 0; i < responseData.response.length; i++) {
             const element = responseData.response[i];
-
-            // if (element.teams.home.name === 'Borussia Monchengladbach') {
-            //   element.teams.home.name = 'Borussia Mgladbach';
-            // } else if (element.teams.away.name === 'Borussia Monchengladbach') {
-            //   element.teams.away.name = 'Borussia Mgladbach';
-            // }
 
             if (element.fixture.status.short != 'CANC') {
               let gameday = +element.league.round.slice(-2);
               gameday = +('0' + gameday).slice(-2);
 
-              console.log('fetchGames', gameday);
+              // console.log('fetchGames', gameday);
 
               let getTimeDate = new Date(element.fixture.date).getTime();
 
-              if (isNaN(gameday) && lastRoundName != element.league.round && element.league.round.includes('MLS Cup')) {
-                console.log("check", lastRoundName + element.fixture.date);
-                additionalGamedays++;
-                lastRoundName = element.league.round;
-                gameday = additionalGamedays;
-                gamedaysArray.push([]);
-              } else if (isNaN(gameday) && lastRoundName === element.league.round) {
-                gameday = additionalGamedays;
-              } else if (isNaN(gameday) && !element.league.round.includes('MLS Cup')) {
-                continue;
-              }
+              // if (isNaN(gameday) && lastRoundName != element.league.round && element.league.round.includes('MLS Cup')) {
+              //   console.log("check", lastRoundName + element.fixture.date);
+              //   additionalGamedays++;
+              //   lastRoundName = element.league.round;
+              //   gameday = additionalGamedays;
+              //   gamedaysArray.push([]);
+              // } else if (isNaN(gameday) && lastRoundName === element.league.round) {
+              //   gameday = additionalGamedays;
+              // } else if (isNaN(gameday) && !element.league.round.includes('MLS Cup')) {
+              //   continue;
+              // }
 
               gamedaysArray[gameday - 1].push({
                 home: element.teams.home.name,
@@ -181,7 +172,6 @@ export class GamesService {
               });
             }
           }
-          console.log(gamedaysArray);
           for (let i = 0; i < gamedaysArray.length; i++) {
             this.sortGames(gamedaysArray[i]);
           }
@@ -215,8 +205,6 @@ export class GamesService {
    * @returns - The initialised standings
    */
   getTeams() {
-    console.log('getTeamsService');
-
     return this.firestore
       .collection(this.leagueDetails.leagueName)
       .doc('teams')
@@ -252,8 +240,6 @@ export class GamesService {
    * @returns - The games of this league's season
    */
   getAllSeasonGames() {
-    console.log('getAllSeasonGamesService');
-
     return this.firestore
       .collection(`${this.leagueDetails.leagueName}`)
       .doc('games')
@@ -369,7 +355,6 @@ export class GamesService {
    */
   updateGames(games: any) {
     this.games = games;
-    console.log('UG', this.games);
     this.gamesSource.next(this.games);
   }
 }

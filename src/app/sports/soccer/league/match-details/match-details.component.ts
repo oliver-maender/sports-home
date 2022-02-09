@@ -65,6 +65,9 @@ export class MatchDetailsComponent implements OnInit, OnDestroy {
 
   constructor(private gamesService: GamesService) { }
 
+  /**
+   * Initialises the current match details, calculates the stats and formats the date to be shown.
+   */
   ngOnInit(): void {
     this.currentMatchDetailsSubscription = this.gamesService.currentMatchDetails.subscribe((data) => {
       this.i = data.i;
@@ -122,9 +125,7 @@ export class MatchDetailsComponent implements OnInit, OnDestroy {
    * @param awayGoals - The away team's amount of goals
    */
   changeStandings(index: number, homeGoals: number, awayGoals: number) {
-    // if (homeGoals != null && awayGoals != null) {
     this.changeStandingsEvent.emit({ index, homeGoals, awayGoals });
-    // }
   }
 
   /**

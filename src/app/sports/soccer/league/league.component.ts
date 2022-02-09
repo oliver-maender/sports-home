@@ -64,9 +64,8 @@ export class LeagueComponent implements OnInit, OnDestroy {
    * Initialises the website with checking the route and subscribes to value changes of the variable to show or not show the match details.
    */
   ngOnInit(): void {
-    // this.fetchLeagueInfo();
     this.checkForRoute();
-    this.getStatus();
+    // this.getStatus();
     this.changeSelectedTeams();
 
     this.currentMatchDetailsSubscription = this.gamesService.currentShowMatchDetails.subscribe((data) => {
@@ -96,7 +95,7 @@ export class LeagueComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Gets the league details to display the characteristics of the this league.
+   * Gets the league details to display the characteristics of this league.
    */
   getLeagueInfo() {
     this.leagueInfoService.leagueDetails.leagueName =
@@ -206,7 +205,6 @@ export class LeagueComponent implements OnInit, OnDestroy {
    */
   getAllGames() {
     if (localStorage.getItem(`${this.leagueDetails.leagueName}-games`)) {
-      console.log('From LS');
       this.allSeasonGames = JSON.parse(
         localStorage.getItem(`${this.leagueDetails.leagueName}-games`) || ''
       );
@@ -307,7 +305,6 @@ export class LeagueComponent implements OnInit, OnDestroy {
    * Calculates the standings depending on how the games ended, skips games without a valid result and sorts them afterwads.
    */
   calculateStandings() {
-    console.log('AllGames', this.allGames);
     for (let i = 0; i < this.allGames.length; i++) {
       if (i >= this.leagueDetails.gamedays) {
         continue;
@@ -364,7 +361,6 @@ export class LeagueComponent implements OnInit, OnDestroy {
    * Sorts the standings and previous standings checks if it's gameday 1.
    */
   sortStandings() {
-    console.log(this.standings);
     this.previousStandings.sort(function (a: any, b: any) {
       return b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
     });
@@ -453,6 +449,7 @@ export class LeagueComponent implements OnInit, OnDestroy {
 
   /**
    * Changes the standings value after a game's result has changed depending on how the game result was before and how it is now and sorts the standings again.
+   * This is a huge function because it checks many different game outcomes.
    *
    * @param {number} index - The gameday index of the game
    * @param {number} homeGoals - The new amount of goals the home team scored
@@ -513,8 +510,6 @@ export class LeagueComponent implements OnInit, OnDestroy {
     this.games[index].fulltimeAway = awayGoals;
     this.allSeasonGames[this.leagueDetails.gameday - 1][index].fulltimeHome = homeGoals;
     this.allSeasonGames[this.leagueDetails.gameday - 1][index].fulltimeAway = awayGoals;
-
-    console.log('AllSeasonGamesCS', this.allSeasonGames);
 
     this.gamesService.updateGames(this.games);
     this.gamesService.updateAllSeasonGames(this.allSeasonGames);
@@ -701,6 +696,14 @@ export class LeagueComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.showMatchDetails = false;
     }, 500);
+  }
+
+  /**
+   * Updates the league data to the current state in the firestore.
+   */
+  onUpdateLeagueData() {
+    localStorage.removeItem(`${this.leagueDetails.leagueName}-games`);
+    window.location.reload();
   }
 
   /**
