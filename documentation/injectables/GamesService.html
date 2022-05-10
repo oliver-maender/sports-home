@@ -1,0 +1,2075 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sports-home documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sports-home documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >GamesService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/games.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allGames" >allGames</a>
+                            </li>
+                            <li>
+                                <a href="#allSeasonGames" >allSeasonGames</a>
+                            </li>
+                            <li>
+                                <a href="#currentGames" >currentGames</a>
+                            </li>
+                            <li>
+                                <a href="#currentMatchDetails" >currentMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#currentShowMatchDetails" >currentShowMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#currentTeamsSource" >currentTeamsSource</a>
+                            </li>
+                            <li>
+                                <a href="#games" >games</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#gamesSource" >gamesSource</a>
+                            </li>
+                            <li>
+                                <a href="#httpOptions" >httpOptions</a>
+                            </li>
+                            <li>
+                                <a href="#leagueDetails" >leagueDetails</a>
+                            </li>
+                            <li>
+                                <a href="#matchDetails" >matchDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#matchDetailsSource" >matchDetailsSource</a>
+                            </li>
+                            <li>
+                                <a href="#showMatchDetails" >showMatchDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#showMatchDetailsSource" >showMatchDetailsSource</a>
+                            </li>
+                            <li>
+                                <a href="#standings" >standings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeDate" >changeDate</a>
+                            </li>
+                            <li>
+                                <a href="#changeGameday" >changeGameday</a>
+                            </li>
+                            <li>
+                                <a href="#changeMatchDetails" >changeMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#changeMatchDetailsNext" >changeMatchDetailsNext</a>
+                            </li>
+                            <li>
+                                <a href="#fetchGames" >fetchGames</a>
+                            </li>
+                            <li>
+                                <a href="#fetchTeams" >fetchTeams</a>
+                            </li>
+                            <li>
+                                <a href="#getAllSeasonGames" >getAllSeasonGames</a>
+                            </li>
+                            <li>
+                                <a href="#getStatus" >getStatus</a>
+                            </li>
+                            <li>
+                                <a href="#getTeams" >getTeams</a>
+                            </li>
+                            <li>
+                                <a href="#sortGames" >sortGames</a>
+                            </li>
+                            <li>
+                                <a href="#updateAllGames" >updateAllGames</a>
+                            </li>
+                            <li>
+                                <a href="#updateAllSeasonGames" >updateAllSeasonGames</a>
+                            </li>
+                            <li>
+                                <a href="#updateGames" >updateGames</a>
+                            </li>
+                            <li>
+                                <a href="#updateStandings" >updateStandings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, firestore: AngularFirestore)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/shared/games.service.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>firestore</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFirestore</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeDate"></a>
+                    <span class="name">
+                        <span ><b>changeDate</b></span>
+                        <a href="#changeDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeDate(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, date: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="328"
+                            class="link-to-prism">src/app/shared/games.service.ts:328</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes a game&#39;s date.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The gameday index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The new date</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeGameday"></a>
+                    <span class="name">
+                        <span ><b>changeGameday</b></span>
+                        <a href="#changeGameday"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeGameday(gameday: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="318"
+                            class="link-to-prism">src/app/shared/games.service.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the service&#39;s gameday to the passed gameday.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gameday</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The currently selected gameday</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>changeMatchDetails</b></span>
+                        <a href="#changeMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeMatchDetails(matchDetails: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="279"
+                            class="link-to-prism">src/app/shared/games.service.ts:279</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets this services&#39;s match details to the passed match details.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matchDetails</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The details of the currently selected match</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeMatchDetailsNext"></a>
+                    <span class="name">
+                        <span ><b>changeMatchDetailsNext</b></span>
+                        <a href="#changeMatchDetailsNext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeMatchDetailsNext()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="307"
+                            class="link-to-prism">src/app/shared/games.service.ts:307</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Informs the components which subscribed that the currently selected match has been changed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchGames"></a>
+                    <span class="name">
+                        <span ><b>fetchGames</b></span>
+                        <a href="#fetchGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/shared/games.service.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Fetches the games of this league&#39;s season to the database.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The games of this league&#39;s season</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchTeams"></a>
+                    <span class="name">
+                        <span ><b>fetchTeams</b></span>
+                        <a href="#fetchTeams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchTeams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/shared/games.service.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Fetches the teams of this league&#39;s season to the database.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The teams of this league&#39;s season</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllSeasonGames"></a>
+                    <span class="name">
+                        <span ><b>getAllSeasonGames</b></span>
+                        <a href="#getAllSeasonGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllSeasonGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="258"
+                            class="link-to-prism">src/app/shared/games.service.ts:258</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets all the games of this league&#39;s season from the database.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The games of this league&#39;s season</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStatus"></a>
+                    <span class="name">
+                        <span ><b>getStatus</b></span>
+                        <a href="#getStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/shared/games.service.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the status for the data API to see how many requests have already been made today.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTeams"></a>
+                    <span class="name">
+                        <span ><b>getTeams</b></span>
+                        <a href="#getTeams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTeams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">src/app/shared/games.service.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the teams from the database and initialises the standings</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The initialised standings</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortGames"></a>
+                    <span class="name">
+                        <span ><b>sortGames</b></span>
+                        <a href="#sortGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortGames(gameday: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="211"
+                            class="link-to-prism">src/app/shared/games.service.ts:211</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sorts the specific gameday by date.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gameday</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The currently to be sorted gameday</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The sorted gameday</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAllGames"></a>
+                    <span class="name">
+                        <span ><b>updateAllGames</b></span>
+                        <a href="#updateAllGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAllGames(allGames: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="350"
+                            class="link-to-prism">src/app/shared/games.service.ts:350</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the service&#39;s allGames to the passed allGames.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>allGames</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The games from gameday one until the selected gameday of this league&#39;s season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAllSeasonGames"></a>
+                    <span class="name">
+                        <span ><b>updateAllSeasonGames</b></span>
+                        <a href="#updateAllSeasonGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAllSeasonGames(allSeasonGames: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="359"
+                            class="link-to-prism">src/app/shared/games.service.ts:359</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the service&#39;s allSeasonGames to the passed allSeasonGames.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>allSeasonGames</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>All the games of this league&#39;s season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGames"></a>
+                    <span class="name">
+                        <span ><b>updateGames</b></span>
+                        <a href="#updateGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGames(games: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/shared/games.service.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the service&#39;s games to the passed games.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>games</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The games of this gameday</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateStandings"></a>
+                    <span class="name">
+                        <span ><b>updateStandings</b></span>
+                        <a href="#updateStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateStandings(standings: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="341"
+                            class="link-to-prism">src/app/shared/games.service.ts:341</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the service&#39;s standings to the passed standings.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>standings</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The standings of this league&#39;s season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allGames"></a>
+                    <span class="name">
+                        <span ><b>allGames</b></span>
+                        <a href="#allGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/games.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allSeasonGames"></a>
+                    <span class="name">
+                        <span ><b>allSeasonGames</b></span>
+                        <a href="#allSeasonGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/games.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentGames"></a>
+                    <span class="name">
+                        <span ><b>currentGames</b></span>
+                        <a href="#currentGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.gamesSource.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/shared/games.service.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>currentMatchDetails</b></span>
+                        <a href="#currentMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.matchDetailsSource.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/shared/games.service.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentShowMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>currentShowMatchDetails</b></span>
+                        <a href="#currentShowMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.showMatchDetailsSource.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/shared/games.service.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentTeamsSource"></a>
+                    <span class="name">
+                        <span ><b>currentTeamsSource</b></span>
+                        <a href="#currentTeamsSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/shared/games.service.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="games"></a>
+                    <span class="name">
+                        <span ><b>games</b></span>
+                        <a href="#games"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/games.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gamesSource"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>gamesSource</b></span>
+                        <a href="#gamesSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(this.games)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/shared/games.service.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="httpOptions"></a>
+                    <span class="name">
+                        <span ><b>httpOptions</b></span>
+                        <a href="#httpOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    headers: new HttpHeaders(environment.apiSports),
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/shared/games.service.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leagueDetails"></a>
+                    <span class="name">
+                        <span ><b>leagueDetails</b></span>
+                        <a href="#leagueDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/leagueDetails.html" target="_self" >leagueDetails</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/shared/games.service.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matchDetails"></a>
+                    <span class="name">
+                        <span ><b>matchDetails</b></span>
+                        <a href="#matchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    i: 0,
+    date: 0,
+    homeLogo: &#x27;&#x27;,
+    awayLogo: &#x27;&#x27;,
+    home: &#x27;&#x27;,
+    away: &#x27;&#x27;,
+    homeGoals: 0,
+    awayGoals: 0,
+    homeHalftimeGoals: 0,
+    awayHalftimeGoals: 0,
+    possessionHome: 0,
+    possessionAway: 0,
+    shotsHome: 0,
+    shotsAway: 0,
+    shotsOnGoalHome: 0,
+    shotsOnGoalAway: 0,
+    cornersHome: 0,
+    cornersAway: 0
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/games.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matchDetailsSource"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>matchDetailsSource</b></span>
+                        <a href="#matchDetailsSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(this.matchDetails)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/games.service.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>showMatchDetails</b></span>
+                        <a href="#showMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/shared/games.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMatchDetailsSource"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>showMatchDetailsSource</b></span>
+                        <a href="#showMatchDetailsSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(this.showMatchDetails)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/shared/games.service.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="standings"></a>
+                    <span class="name">
+                        <span ><b>standings</b></span>
+                        <a href="#standings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/games.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { AngularFirestore } from &#x27;@angular/fire/firestore&#x27;;
+import { BehaviorSubject, Subject } from &#x27;rxjs&#x27;;
+import { map, take } from &#x27;rxjs/operators&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+import { leagueDetails } from &#x27;../sports/soccer/league/league.component&#x27;;
+
+@Injectable({ providedIn: &#x27;root&#x27; })
+export class GamesService {
+  httpOptions &#x3D; {
+    headers: new HttpHeaders(environment.apiSports),
+  };
+
+  standings: any &#x3D; [];
+  games: any &#x3D; [];
+  allGames: any &#x3D; [];
+  allSeasonGames: any &#x3D; [];
+
+  leagueDetails: leagueDetails &#x3D; {
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  };
+
+  showMatchDetails &#x3D; false;
+  matchDetails &#x3D; {
+    i: 0,
+    date: 0,
+    homeLogo: &#x27;&#x27;,
+    awayLogo: &#x27;&#x27;,
+    home: &#x27;&#x27;,
+    away: &#x27;&#x27;,
+    homeGoals: 0,
+    awayGoals: 0,
+    homeHalftimeGoals: 0,
+    awayHalftimeGoals: 0,
+    possessionHome: 0,
+    possessionAway: 0,
+    shotsHome: 0,
+    shotsAway: 0,
+    shotsOnGoalHome: 0,
+    shotsOnGoalAway: 0,
+    cornersHome: 0,
+    cornersAway: 0
+  };
+
+  private showMatchDetailsSource &#x3D; new BehaviorSubject(this.showMatchDetails);
+  currentShowMatchDetails &#x3D; this.showMatchDetailsSource.asObservable();
+
+  private matchDetailsSource &#x3D; new BehaviorSubject(this.matchDetails);
+  currentMatchDetails &#x3D; this.matchDetailsSource.asObservable();
+
+  private gamesSource &#x3D; new BehaviorSubject(this.games);
+  currentGames &#x3D; this.gamesSource.asObservable();
+
+  currentTeamsSource &#x3D; new Subject&lt;any&gt;();
+
+  constructor(private http: HttpClient, private firestore: AngularFirestore) { }
+
+  /**
+   * Gets the status for the data API to see how many requests have already been made today.
+   */
+  getStatus() {
+    this.http
+      .get(&#x27;https://v3.football.api-sports.io/status&#x27;, this.httpOptions)
+      .pipe(take(1))
+      .subscribe((responseData: any) &#x3D;&gt; {
+        console.log(responseData);
+      });
+  }
+
+  /**
+   * Fetches the teams of this league&#x27;s season to the database.
+   *
+   * @returns - The teams of this league&#x27;s season
+   */
+  fetchTeams() {
+    let teams: any &#x3D; [];
+
+    return this.http
+      .get(
+        &#x60;https://v3.football.api-sports.io/teams?league&#x3D;${this.leagueDetails.leagueId}&amp;season&#x3D;${this.leagueDetails.season}&#x60;,
+        this.httpOptions
+      )
+      .pipe(
+        take(1),
+        map((responseData: any) &#x3D;&gt; {
+          for (let i &#x3D; 0; i &lt; responseData.response.length; i++) {
+            const element &#x3D; responseData.response[i];
+            teams.push({ name: element.team.name, logo: element.team.logo });
+          }
+          let firebaseTeams &#x3D; { teams };
+          this.firestore
+            .collection(this.leagueDetails.leagueName)
+            .doc(&#x27;teams&#x27;)
+            .set(firebaseTeams);
+          return responseData;
+        })
+      );
+  }
+
+  /**
+   * Fetches the games of this league&#x27;s season to the database.
+   *
+   * @returns - The games of this league&#x27;s season
+   */
+  fetchGames() {
+    let gamedaysArray: any &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.leagueDetails.gamedays; i++) {
+      gamedaysArray.push([]);
+    }
+    return this.http
+      .get(
+        &#x60;https://v3.football.api-sports.io/fixtures?league&#x3D;${this.leagueDetails.leagueId}&amp;season&#x3D;${this.leagueDetails.season}&#x60;,
+        this.httpOptions
+      )
+      .pipe(
+        take(1),
+        map((responseData: any) &#x3D;&gt; {
+          // let additionalGamedays &#x3D; this.leagueDetails.gamedays;
+          // let lastRoundName &#x3D; &#x27;&#x27;;
+
+          for (let i &#x3D; 0; i &lt; responseData.response.length; i++) {
+            const element &#x3D; responseData.response[i];
+
+            if (element.fixture.status.short !&#x3D; &#x27;CANC&#x27;) {
+              let gameday &#x3D; +element.league.round.slice(-2);
+              gameday &#x3D; +(&#x27;0&#x27; + gameday).slice(-2);
+
+              // console.log(&#x27;fetchGames&#x27;, gameday);
+
+              let getTimeDate &#x3D; new Date(element.fixture.date).getTime();
+
+              // if (isNaN(gameday) &amp;&amp; lastRoundName !&#x3D; element.league.round &amp;&amp; element.league.round.includes(&#x27;MLS Cup&#x27;)) {
+              //   console.log(&quot;check&quot;, lastRoundName + element.fixture.date);
+              //   additionalGamedays++;
+              //   lastRoundName &#x3D; element.league.round;
+              //   gameday &#x3D; additionalGamedays;
+              //   gamedaysArray.push([]);
+              // } else if (isNaN(gameday) &amp;&amp; lastRoundName &#x3D;&#x3D;&#x3D; element.league.round) {
+              //   gameday &#x3D; additionalGamedays;
+              // } else if (isNaN(gameday) &amp;&amp; !element.league.round.includes(&#x27;MLS Cup&#x27;)) {
+              //   continue;
+              // }
+
+              // if (element.teams.home.name &#x3D;&#x3D;&#x3D; &#x27;Borussia Monchengladbach&#x27;) {
+              //   element.teams.home.name &#x3D; &#x27;Borussia Mgladbach&#x27;;
+              // } else if (element.teams.away.name &#x3D;&#x3D;&#x3D; &#x27;Borussia Monchengladbach&#x27;) {
+              //   element.teams.away.name &#x3D; &#x27;Borussia Mgladbach&#x27;;
+              // }
+              // if (element.teams.home.name &#x3D;&#x3D;&#x3D; &#x27;VfL BOCHUM&#x27;) {
+              //   element.teams.home.name &#x3D; &#x27;VfL Bochum&#x27;;
+              // } else if (element.teams.away.name &#x3D;&#x3D;&#x3D; &#x27;VfL BOCHUM&#x27;) {
+              //   element.teams.away.name &#x3D; &#x27;VfL Bochum&#x27;;
+              // }
+              // if (element.teams.home.name &#x3D;&#x3D;&#x3D; &#x27;SpVgg Greuther Furth&#x27;) {
+              //   element.teams.home.name &#x3D; &#x27;Greuther Furth&#x27;;
+              // } else if (element.teams.away.name &#x3D;&#x3D;&#x3D; &#x27;SpVgg Greuther Furth&#x27;) {
+              //   element.teams.away.name &#x3D; &#x27;Greuther Furth&#x27;;
+              // }
+
+              gamedaysArray[gameday - 1].push({
+                home: element.teams.home.name,
+                away: element.teams.away.name,
+                halftimeHome: element.score.halftime.home,
+                halftimeAway: element.score.halftime.away,
+                fulltimeHome: element.score.fulltime.home,
+                fulltimeAway: element.score.fulltime.away,
+                logoHome: element.teams.home.logo,
+                logoAway: element.teams.away.logo,
+                possessionHome: 0,
+                possessionAway: 0,
+                shotsHome: 0,
+                shotsAway: 0,
+                shotsOnGoalHome: 0,
+                shotsOnGoalAway: 0,
+                cornersHome: 0,
+                cornersAway: 0,
+                date: getTimeDate,
+              });
+            }
+          }
+          for (let i &#x3D; 0; i &lt; gamedaysArray.length; i++) {
+            this.sortGames(gamedaysArray[i]);
+          }
+
+          this.firestore
+            .collection(&#x60;${this.leagueDetails.leagueName}&#x60;)
+            .doc(&#x27;games&#x27;)
+            .set({ ...gamedaysArray });
+
+          return responseData;
+        })
+      );
+  }
+
+  /**
+   * Sorts the specific gameday by date.
+   *
+   * @param gameday - The currently to be sorted gameday
+   * @returns - The sorted gameday
+   */
+  sortGames(gameday: any) {
+    gameday.sort(function (a: any, b: any) {
+      return a.date - b.date;
+    });
+    return gameday;
+  }
+
+  /**
+   * Gets the teams from the database and initialises the standings
+   *
+   * @returns - The initialised standings
+   */
+  getTeams() {
+    return this.firestore
+      .collection(this.leagueDetails.leagueName)
+      .doc(&#x27;teams&#x27;)
+      .get()
+      .pipe(
+        take(1),
+        map((response: any) &#x3D;&gt; {
+          let teams &#x3D; response.data();
+          this.standings &#x3D; [];
+          for (const team of teams.teams) {
+            this.standings.push({
+              team: team.name,
+              logo: team.logo,
+              gamesPlayed: 0,
+              wins: 0,
+              draws: 0,
+              losses: 0,
+              gf: 0,
+              ga: 0,
+              gd: 0,
+              points: 0,
+              current: &#x27;&#x27;,
+            });
+          }
+          return this.standings;
+        })
+      );
+  }
+
+  /**
+   * Gets all the games of this league&#x27;s season from the database.
+   *
+   * @returns - The games of this league&#x27;s season
+   */
+  getAllSeasonGames() {
+    return this.firestore
+      .collection(&#x60;${this.leagueDetails.leagueName}&#x60;)
+      .doc(&#x27;games&#x27;)
+      .get()
+      .pipe(
+        take(1),
+        map((response) &#x3D;&gt; {
+          let allSeasonGamesData &#x3D; response.data();
+          this.allSeasonGames &#x3D; allSeasonGamesData;
+          console.log(&#x27;asGD&#x27;, allSeasonGamesData);
+          return this.allSeasonGames;
+        })
+      );
+  }
+
+  /**
+   * Sets this services&#x27;s match details to the passed match details.
+   *
+   * @param matchDetails - The details of the currently selected match
+   */
+  changeMatchDetails(matchDetails: any) {
+    this.showMatchDetails &#x3D; true;
+
+    this.matchDetails.i &#x3D; matchDetails.i;
+    this.matchDetails.date &#x3D; matchDetails.date;
+    this.matchDetails.homeLogo &#x3D; matchDetails.homeLogo;
+    this.matchDetails.awayLogo &#x3D; matchDetails.awayLogo;
+    this.matchDetails.home &#x3D; matchDetails.home;
+    this.matchDetails.away &#x3D; matchDetails.away;
+    this.matchDetails.homeGoals &#x3D; matchDetails.homeGoals;
+    this.matchDetails.awayGoals &#x3D; matchDetails.awayGoals;
+    this.matchDetails.homeHalftimeGoals &#x3D; matchDetails.homeHalftimeGoals;
+    this.matchDetails.awayHalftimeGoals &#x3D; matchDetails.awayHalftimeGoals;
+    this.matchDetails.possessionHome &#x3D; matchDetails.possessionHome;
+    this.matchDetails.possessionAway &#x3D; matchDetails.possessionAway;
+    this.matchDetails.shotsHome &#x3D; matchDetails.shotsHome;
+    this.matchDetails.shotsAway &#x3D; matchDetails.shotsAway;
+    this.matchDetails.shotsOnGoalHome &#x3D; matchDetails.shotsOnGoalHome;
+    this.matchDetails.shotsOnGoalAway &#x3D; matchDetails.shotsOnGoalAway;
+    this.matchDetails.cornersHome &#x3D; matchDetails.cornersHome;
+    this.matchDetails.cornersAway &#x3D; matchDetails.cornersAway;
+
+    this.changeMatchDetailsNext();
+  }
+
+  /**
+   * Informs the components which subscribed that the currently selected match has been changed.
+   */
+  changeMatchDetailsNext() {
+    this.showMatchDetailsSource.next(this.showMatchDetails);
+    this.matchDetailsSource.next(this.matchDetails);
+    this.currentTeamsSource.next(this.matchDetails.i);
+  }
+
+  /**
+   * Sets the service&#x27;s gameday to the passed gameday.
+   *
+   * @param gameday - The currently selected gameday
+   */
+  changeGameday(gameday: number) {
+    this.leagueDetails.gameday &#x3D; gameday;
+  }
+
+  /**
+   * Changes a game&#x27;s date.
+   *
+   * @param index - The gameday index of the game
+   * @param date - The new date
+   */
+  changeDate(index: number, date: number) {
+    this.matchDetails.date &#x3D; date;
+    this.games[index].date &#x3D; date;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].date &#x3D; date;
+    this.gamesSource.next(this.games);
+    this.updateAllSeasonGames(this.allSeasonGames);
+  }
+
+  /**
+   * Sets the service&#x27;s standings to the passed standings.
+   *
+   * @param standings - The standings of this league&#x27;s season
+   */
+  updateStandings(standings: any) {
+    this.standings &#x3D; standings;
+  }
+
+  /**
+   * Sets the service&#x27;s allGames to the passed allGames.
+   *
+   * @param allGames - The games from gameday one until the selected gameday of this league&#x27;s season
+   */
+  updateAllGames(allGames: any) {
+    this.allGames &#x3D; allGames;
+  }
+
+  /**
+   * Sets the service&#x27;s allSeasonGames to the passed allSeasonGames.
+   *
+   * @param allSeasonGames - All the games of this league&#x27;s season
+   */
+  updateAllSeasonGames(allSeasonGames: any) {
+    this.allSeasonGames &#x3D; allSeasonGames;
+    localStorage.setItem(
+      &#x60;${this.leagueDetails.leagueName}-games&#x60;,
+      JSON.stringify(this.allSeasonGames)
+    );
+  }
+
+  /**
+   * Sets the service&#x27;s games to the passed games.
+   *
+   * @param games - The games of this gameday
+   */
+  updateGames(games: any) {
+    this.games &#x3D; games;
+    this.gamesSource.next(this.games);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GamesService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -151,6 +151,22 @@ export class GamesService {
               //   continue;
               // }
 
+              // if (element.teams.home.name === 'Borussia Monchengladbach') {
+              //   element.teams.home.name = 'Borussia Mgladbach';
+              // } else if (element.teams.away.name === 'Borussia Monchengladbach') {
+              //   element.teams.away.name = 'Borussia Mgladbach';
+              // }
+              // if (element.teams.home.name === 'VfL BOCHUM') {
+              //   element.teams.home.name = 'VfL Bochum';
+              // } else if (element.teams.away.name === 'VfL BOCHUM') {
+              //   element.teams.away.name = 'VfL Bochum';
+              // }
+              // if (element.teams.home.name === 'SpVgg Greuther Furth') {
+              //   element.teams.home.name = 'Greuther Furth';
+              // } else if (element.teams.away.name === 'SpVgg Greuther Furth') {
+              //   element.teams.away.name = 'Greuther Furth';
+              // }
+
               gamedaysArray[gameday - 1].push({
                 home: element.teams.home.name,
                 away: element.teams.away.name,

@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'sports', component: SportsComponent },
   { path: 'legal-notice', component: LegalNoticeComponent },
   { path: 'data-privacy', component: DataPrivacyComponent },
-  { path: '', component: StartPageComponent }
+  { path: '', component: StartPageComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

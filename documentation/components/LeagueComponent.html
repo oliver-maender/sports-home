@@ -1,0 +1,4029 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sports-home documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sports-home documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  LeagueComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sports/soccer/league/league.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-league</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./league.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./league.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allGames" >allGames</a>
+                            </li>
+                            <li>
+                                <a href="#allSeasonGames" >allSeasonGames</a>
+                            </li>
+                            <li>
+                                <a href="#changedStandings" >changedStandings</a>
+                            </li>
+                            <li>
+                                <a href="#currentMatchDetailsSubscription" >currentMatchDetailsSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#currentTeamSubscription" >currentTeamSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#games" >games</a>
+                            </li>
+                            <li>
+                                <a href="#initialCall" >initialCall</a>
+                            </li>
+                            <li>
+                                <a href="#leagueDetails" >leagueDetails</a>
+                            </li>
+                            <li>
+                                <a href="#previousStandings" >previousStandings</a>
+                            </li>
+                            <li>
+                                <a href="#routeSubscription" >routeSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#showMatchDetails" >showMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#standings" >standings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateGoalDifferenceAndPenalties" >calculateGoalDifferenceAndPenalties</a>
+                            </li>
+                            <li>
+                                <a href="#calculateStandings" >calculateStandings</a>
+                            </li>
+                            <li>
+                                <a href="#calculateStandingsValues" >calculateStandingsValues</a>
+                            </li>
+                            <li>
+                                <a href="#changeGameday" >changeGameday</a>
+                            </li>
+                            <li>
+                                <a href="#changeHalftime" >changeHalftime</a>
+                            </li>
+                            <li>
+                                <a href="#changeSeason" >changeSeason</a>
+                            </li>
+                            <li>
+                                <a href="#changeSelectedTeams" >changeSelectedTeams</a>
+                            </li>
+                            <li>
+                                <a href="#changeStandings" >changeStandings</a>
+                            </li>
+                            <li>
+                                <a href="#changeStandingsGoals" >changeStandingsGoals</a>
+                            </li>
+                            <li>
+                                <a href="#changeStandingsValues" >changeStandingsValues</a>
+                            </li>
+                            <li>
+                                <a href="#changeStats" >changeStats</a>
+                            </li>
+                            <li>
+                                <a href="#checkForRoute" >checkForRoute</a>
+                            </li>
+                            <li>
+                                <a href="#checkForStandingsChanges" >checkForStandingsChanges</a>
+                            </li>
+                            <li>
+                                <a href="#closeMatchDetails" >closeMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#determineGameday" >determineGameday</a>
+                            </li>
+                            <li>
+                                <a href="#fetchGames" >fetchGames</a>
+                            </li>
+                            <li>
+                                <a href="#fetchLeagueInfo" >fetchLeagueInfo</a>
+                            </li>
+                            <li>
+                                <a href="#fetchTeams" >fetchTeams</a>
+                            </li>
+                            <li>
+                                <a href="#getAllGames" >getAllGames</a>
+                            </li>
+                            <li>
+                                <a href="#getGames" >getGames</a>
+                            </li>
+                            <li>
+                                <a href="#getLeagueInfo" >getLeagueInfo</a>
+                            </li>
+                            <li>
+                                <a href="#getStatus" >getStatus</a>
+                            </li>
+                            <li>
+                                <a href="#getTeams" >getTeams</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onUpdateLeagueData" >onUpdateLeagueData</a>
+                            </li>
+                            <li>
+                                <a href="#processAllGames" >processAllGames</a>
+                            </li>
+                            <li>
+                                <a href="#setAllGoalsToNull" >setAllGoalsToNull</a>
+                            </li>
+                            <li>
+                                <a href="#setStandingsToZero" >setStandingsToZero</a>
+                            </li>
+                            <li>
+                                <a href="#sortStandings" >sortStandings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, gamesService: <a href="../injectables/GamesService.html" target="_self">GamesService</a>, leagueInfoService: <a href="../injectables/LeagueInfoService.html" target="_self">LeagueInfoService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>gamesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GamesService.html" target="_self" >GamesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>leagueInfoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LeagueInfoService.html" target="_self" >LeagueInfoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateGoalDifferenceAndPenalties"></a>
+                    <span class="name">
+                        <span ><b>calculateGoalDifferenceAndPenalties</b></span>
+                        <a href="#calculateGoalDifferenceAndPenalties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateGoalDifferenceAndPenalties(selectedStandings: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:343</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculates the goal difference and penalties if applicable for the passed standings</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedStandings</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The standings for which this should be calculated</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateStandings"></a>
+                    <span class="name">
+                        <span ><b>calculateStandings</b></span>
+                        <a href="#calculateStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateStandings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="307"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:307</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculates the standings depending on how the games ended, skips games without a valid result and sorts them afterwads.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateStandingsValues"></a>
+                    <span class="name">
+                        <span ><b>calculateStandingsValues</b></span>
+                        <a href="#calculateStandingsValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateStandingsValues(hName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, hGP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hW: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hD: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, aGP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aW: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aD: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="424"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:424</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the values in the standings for the specific teams.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hGP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of games played</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hW</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of wins</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hD</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of draws</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hL</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of losses</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of points</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aGP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of games played</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aW</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of wins</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aD</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of draws</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aL</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of losses</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of points</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeGameday"></a>
+                    <span class="name">
+                        <span ><b>changeGameday</b></span>
+                        <a href="#changeGameday"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeGameday(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="638"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:638</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the displayed gameday for the league&#39;s season.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The now selected gameday</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeHalftime"></a>
+                    <span class="name">
+                        <span ><b>changeHalftime</b></span>
+                        <a href="#changeHalftime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeHalftime(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, homeHalftimeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, awayHalftimeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="595"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:595</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the halftime for and goals against values in the standings for the specific teams.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The gameday index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>homeHalftimeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of goals scored at halftime</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>awayHalftimeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of goals scored at halftime</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSeason"></a>
+                    <span class="name">
+                        <span ><b>changeSeason</b></span>
+                        <a href="#changeSeason"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeSeason(season: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="617"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:617</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the displayed season of the league.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>season</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The now selected season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSelectedTeams"></a>
+                    <span class="name">
+                        <span ><b>changeSelectedTeams</b></span>
+                        <a href="#changeSelectedTeams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeSelectedTeams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:287</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the selected team in the standings so that you can see which two teams in the standings are currently shown in match details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStandings"></a>
+                    <span class="name">
+                        <span ><b>changeStandings</b></span>
+                        <a href="#changeStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStandings(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, homeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, awayGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="458"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:458</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the standings value after a game&#39;s result has changed depending on how the game result was before and how it is now and sorts the standings again.
+This is a huge function because it checks many different game outcomes.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The gameday index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>homeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The new amount of goals the home team scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>awayGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The new amount of goals the away team scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStandingsGoals"></a>
+                    <span class="name">
+                        <span ><b>changeStandingsGoals</b></span>
+                        <a href="#changeStandingsGoals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStandingsGoals(hName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, hG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hFG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, aG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aFG: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="570"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:570</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the goals for and goals against values in the standings for the specific teams and calculates the goal difference for each team.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s new amount of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hFG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s old amount of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s new amount of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aFG</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s old amount of goals scored</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStandingsValues"></a>
+                    <span class="name">
+                        <span ><b>changeStandingsValues</b></span>
+                        <a href="#changeStandingsValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStandingsValues(hName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, hGP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hW: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hD: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, hP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, aGP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aW: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aD: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, aP: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="535"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:535</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes most values in the standings for the specific teams.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hGP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of games played</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hW</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of wins</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hD</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of draws</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hL</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of losses</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s change of points</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aGP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of games played</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aW</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of wins</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aD</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of draws</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aL</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of losses</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aP</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s change of points</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStats"></a>
+                    <span class="name">
+                        <span ><b>changeStats</b></span>
+                        <a href="#changeStats"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStats(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, possessionHome: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, possessionAway: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, shotsHome: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, shotsAway: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, shotsOnGoalHome: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, shotsOnGoalAway: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, cornersHome: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, cornersAway: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="660"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:660</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the stats in the games array.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>possessionHome</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The amount of home possession in %</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>possessionAway</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The amount of away possession in %</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shotsHome</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of shots</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shotsAway</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of shots</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shotsOnGoalHome</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of shots on goal</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shotsOnGoalAway</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of shots on goal</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>cornersHome</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of corners</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>cornersAway</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of corners</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForRoute"></a>
+                    <span class="name">
+                        <span ><b>checkForRoute</b></span>
+                        <a href="#checkForRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForRoute()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks for the route to display the correct league.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForStandingsChanges"></a>
+                    <span class="name">
+                        <span ><b>checkForStandingsChanges</b></span>
+                        <a href="#checkForStandingsChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForStandingsChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="386"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:386</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>It checks how the team changed from the gameday before to this gameday and saves this in the changedStandings array.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>closeMatchDetails</b></span>
+                        <a href="#closeMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeMatchDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="694"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:694</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Closes the match details.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="determineGameday"></a>
+                    <span class="name">
+                        <span ><b>determineGameday</b></span>
+                        <a href="#determineGameday"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>determineGameday()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks when the next game is and shows the gameday right before</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchGames"></a>
+                    <span class="name">
+                        <span ><b>fetchGames</b></span>
+                        <a href="#fetchGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initiates the function to fetch the games from this league to the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchLeagueInfo"></a>
+                    <span class="name">
+                        <span ><b>fetchLeagueInfo</b></span>
+                        <a href="#fetchLeagueInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchLeagueInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initiates the function to fetch the league info to the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchTeams"></a>
+                    <span class="name">
+                        <span ><b>fetchTeams</b></span>
+                        <a href="#fetchTeams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchTeams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initiates the function to fetch the teams from this league to the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllGames"></a>
+                    <span class="name">
+                        <span ><b>getAllGames</b></span>
+                        <a href="#getAllGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the games for this league&#39;s season from the database or the local storage if available.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGames"></a>
+                    <span class="name">
+                        <span ><b>getGames</b></span>
+                        <a href="#getGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the games of one gameday from the array which contains all games of this league&#39;s season.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLeagueInfo"></a>
+                    <span class="name">
+                        <span ><b>getLeagueInfo</b></span>
+                        <a href="#getLeagueInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLeagueInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the league details to display the characteristics of this league.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStatus"></a>
+                    <span class="name">
+                        <span ><b>getStatus</b></span>
+                        <a href="#getStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initiates the function to get the status for the data API to see how many requests have already been made today.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTeams"></a>
+                    <span class="name">
+                        <span ><b>getTeams</b></span>
+                        <a href="#getTeams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTeams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the teams for this league&#39;s season from the database or the local storage if available.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="712"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:712</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes to all possible subscriptions if necessary.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialises the website with checking the route and subscribes to value changes of the variable to show or not show the match details.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUpdateLeagueData"></a>
+                    <span class="name">
+                        <span ><b>onUpdateLeagueData</b></span>
+                        <a href="#onUpdateLeagueData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onUpdateLeagueData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="704"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:704</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates the league data to the current state in the firestore.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processAllGames"></a>
+                    <span class="name">
+                        <span ><b>processAllGames</b></span>
+                        <a href="#processAllGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processAllGames()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="255"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:255</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets all games of this league&#39;s season from gameday one until the currently selected gameday.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setAllGoalsToNull"></a>
+                    <span class="name">
+                        <span ><b>setAllGoalsToNull</b></span>
+                        <a href="#setAllGoalsToNull"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setAllGoalsToNull()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets all goals to null, so that it looks like the league&#39;s season would have not been played (yet).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setStandingsToZero"></a>
+                    <span class="name">
+                        <span ><b>setStandingsToZero</b></span>
+                        <a href="#setStandingsToZero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setStandingsToZero()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="270"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:270</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets all standings values to zero so that the standings can be calculated again from zero.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortStandings"></a>
+                    <span class="name">
+                        <span ><b>sortStandings</b></span>
+                        <a href="#sortStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortStandings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="363"
+                            class="link-to-prism">src/app/sports/soccer/league/league.component.ts:363</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sorts the standings and previous standings checks if it&#39;s gameday 1.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allGames"></a>
+                    <span class="name">
+                        <span ><b>allGames</b></span>
+                        <a href="#allGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allSeasonGames"></a>
+                    <span class="name">
+                        <span ><b>allSeasonGames</b></span>
+                        <a href="#allSeasonGames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changedStandings"></a>
+                    <span class="name">
+                        <span ><b>changedStandings</b></span>
+                        <a href="#changedStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentMatchDetailsSubscription"></a>
+                    <span class="name">
+                        <span ><b>currentMatchDetailsSubscription</b></span>
+                        <a href="#currentMatchDetailsSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentTeamSubscription"></a>
+                    <span class="name">
+                        <span ><b>currentTeamSubscription</b></span>
+                        <a href="#currentTeamSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="games"></a>
+                    <span class="name">
+                        <span ><b>games</b></span>
+                        <a href="#games"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialCall"></a>
+                    <span class="name">
+                        <span ><b>initialCall</b></span>
+                        <a href="#initialCall"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leagueDetails"></a>
+                    <span class="name">
+                        <span ><b>leagueDetails</b></span>
+                        <a href="#leagueDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/leagueDetails.html" target="_self" >leagueDetails</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="previousStandings"></a>
+                    <span class="name">
+                        <span ><b>previousStandings</b></span>
+                        <a href="#previousStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="routeSubscription"></a>
+                    <span class="name">
+                        <span ><b>routeSubscription</b></span>
+                        <a href="#routeSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>showMatchDetails</b></span>
+                        <a href="#showMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="standings"></a>
+                    <span class="name">
+                        <span ><b>standings</b></span>
+                        <a href="#standings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/sports/soccer/league/league.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+
+import { take } from &#x27;rxjs/operators&#x27;;
+import { GamesService } from &#x27;src/app/shared/games.service&#x27;;
+import { LeagueInfoService } from &#x27;src/app/shared/league-info.service&#x27;;
+
+export interface leagueDetails {
+  leagueName: string,
+  season: string,
+  leagueId: number,
+  gameday: number,
+  gamedays: number,
+  amountTeams: number,
+  gamesPerGameday: number,
+  specialPos: Array&lt;string&gt;,
+  penalties: Array&lt;{ team: string, points: number }&gt;,
+  hasPenalties: boolean
+}
+
+@Component({
+  selector: &#x27;app-league&#x27;,
+  templateUrl: &#x27;./league.component.html&#x27;,
+  styleUrls: [&#x27;./league.component.scss&#x27;],
+})
+export class LeagueComponent implements OnInit, OnDestroy {
+  changedStandings: any &#x3D; [];
+  previousStandings: any &#x3D; [];
+  standings: any &#x3D; [];
+  games: any &#x3D; [];
+  allGames: any &#x3D; [];
+  allSeasonGames: any &#x3D; {};
+
+  leagueDetails: leagueDetails &#x3D; {
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  };
+
+  showMatchDetails &#x3D; false;
+
+  initialCall &#x3D; true;
+
+  routeSubscription!: Subscription;
+  currentTeamSubscription!: Subscription;
+  currentMatchDetailsSubscription!: Subscription;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private gamesService: GamesService,
+    private leagueInfoService: LeagueInfoService
+  ) { }
+
+  /**
+   * Initialises the website with checking the route and subscribes to value changes of the variable to show or not show the match details.
+   */
+  ngOnInit(): void {
+    this.checkForRoute();
+    // this.getStatus();
+    this.changeSelectedTeams();
+
+    this.currentMatchDetailsSubscription &#x3D; this.gamesService.currentShowMatchDetails.subscribe((data) &#x3D;&gt; {
+      this.showMatchDetails &#x3D; data;
+    });
+  }
+
+  /**
+   * Checks for the route to display the correct league.
+   */
+  checkForRoute() {
+    this.routeSubscription &#x3D; this.route.params.subscribe((params) &#x3D;&gt; {
+      if (params[&#x27;name&#x27;]) {
+        this.leagueDetails.leagueName &#x3D; params[&#x27;name&#x27;];
+      } else {
+        this.leagueDetails.leagueName &#x3D; &#x27;soccer-ger-1-2020&#x27;;
+      }
+      this.getLeagueInfo();
+    });
+  }
+
+  /**
+   * Initiates the function to fetch the league info to the database.
+   */
+  fetchLeagueInfo() {
+    this.leagueInfoService.fetchLeagueInfo();
+  }
+
+  /**
+   * Gets the league details to display the characteristics of this league.
+   */
+  getLeagueInfo() {
+    this.leagueInfoService.leagueDetails.leagueName &#x3D;
+      this.leagueDetails.leagueName;
+    this.leagueInfoService
+      .getLeagueInfo()
+      .pipe(take(1))
+      .subscribe((data) &#x3D;&gt; {
+        this.leagueDetails &#x3D; data;
+        this.leagueDetails.season &#x3D; this.leagueDetails.leagueName.slice(-4);
+        this.initialCall &#x3D; true;
+        this.gamesService.leagueDetails &#x3D; this.leagueDetails;
+        this.leagueInfoService.leagueDetails &#x3D; this.leagueDetails;
+        this.getTeams();
+        // this.fetchTeams();
+        // this.fetchGames();
+      });
+  }
+
+  /**
+   * Initiates the function to get the status for the data API to see how many requests have already been made today.
+   */
+  getStatus() {
+    this.gamesService.getStatus();
+  }
+
+  /**
+   * Initiates the function to fetch the teams from this league to the database.
+   */
+  fetchTeams() {
+    this.gamesService
+      .fetchTeams()
+      .pipe(take(1))
+      .subscribe((responseData) &#x3D;&gt; {
+        console.log(responseData);
+      });
+  }
+
+  /**
+   * Initiates the function to fetch the games from this league to the database.
+   */
+  fetchGames() {
+    this.gamesService
+      .fetchGames()
+      .pipe(take(1))
+      .subscribe((responseData) &#x3D;&gt; {
+        console.log(responseData);
+      });
+  }
+
+  /**
+   * Sets all goals to null, so that it looks like the league&#x27;s season would have not been played (yet).
+   */
+  setAllGoalsToNull() {
+    for (let i &#x3D; 0; i &lt; Object.keys(this.allSeasonGames).length; i++) {
+      const gameday &#x3D; this.allSeasonGames[i];
+      for (const game of gameday) {
+        game.halftimeHome &#x3D; null;
+        game.halftimeAway &#x3D; null;
+        game.fulltimeHome &#x3D; null;
+        game.fulltimeAway &#x3D; null;
+      }
+    }
+    this.gamesService.updateAllSeasonGames(this.allSeasonGames);
+  }
+
+  /**
+   * Gets the teams for this league&#x27;s season from the database or the local storage if available.
+   */
+  getTeams() {
+    if (localStorage.getItem(&#x60;${this.leagueDetails.leagueName}-teams&#x60;)) {
+      this.standings &#x3D; JSON.parse(
+        localStorage.getItem(&#x60;${this.leagueDetails.leagueName}-teams&#x60;) || &#x27;&#x27;
+      );
+      this.showMatchDetails &#x3D; false;
+      this.getAllGames();
+    } else {
+      this.gamesService
+        .getTeams()
+        .pipe(take(1))
+        .subscribe((standings) &#x3D;&gt; {
+          this.standings &#x3D; standings;
+          localStorage.setItem(
+            &#x60;${this.leagueDetails.leagueName}-teams&#x60;,
+            JSON.stringify(this.standings)
+          );
+          this.getAllGames();
+        });
+    }
+  }
+
+  /**
+   * Gets the games of one gameday from the array which contains all games of this league&#x27;s season.
+   */
+  getGames() {
+    this.games &#x3D; [];
+
+    for (let i &#x3D; 0; i &lt; this.allGames[this.leagueDetails.gameday - 1].length; i++) {
+      this.games.push(this.allGames[this.leagueDetails.gameday - 1][i]);
+    }
+    this.showMatchDetails &#x3D; false;
+    this.gamesService.updateGames(this.games);
+  }
+
+  /**
+   * Gets the games for this league&#x27;s season from the database or the local storage if available.
+   */
+  getAllGames() {
+    if (localStorage.getItem(&#x60;${this.leagueDetails.leagueName}-games&#x60;)) {
+      this.allSeasonGames &#x3D; JSON.parse(
+        localStorage.getItem(&#x60;${this.leagueDetails.leagueName}-games&#x60;) || &#x27;&#x27;
+      );
+      if (this.initialCall) {
+        this.determineGameday();
+        this.initialCall &#x3D; false;
+      } else {
+        this.processAllGames();
+      }
+    } else {
+      console.log(&#x27;From FB&#x27;);
+      this.gamesService
+        .getAllSeasonGames()
+        .pipe(take(1))
+        .subscribe((allSeasonGamesData) &#x3D;&gt; {
+          this.allSeasonGames &#x3D; allSeasonGamesData;
+          if (this.initialCall) {
+            this.determineGameday();
+            this.initialCall &#x3D; false;
+          } else {
+            this.processAllGames();
+          }
+        });
+    }
+  }
+
+  /**
+   * Checks when the next game is and shows the gameday right before
+   */
+  determineGameday() {
+    let currentDate &#x3D; new Date().getTime();
+    for (let i &#x3D; 0; i &lt; Object.keys(this.allSeasonGames).length; i++) {
+      if (this.allSeasonGames[i][0].date &gt; currentDate) {
+        if (i &gt; 0) {
+          this.leagueDetails.gameday &#x3D; i;
+        } else {
+          this.leagueDetails.gameday &#x3D; 1;
+        }
+        break;
+      }
+    }
+    this.processAllGames();
+  }
+
+  /**
+   * Gets all games of this league&#x27;s season from gameday one until the currently selected gameday.
+   */
+  processAllGames() {
+    this.allGames &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.leagueDetails.gameday; i++) {
+      this.allGames.push(this.allSeasonGames[i]);
+    }
+    this.gamesService.updateAllGames(this.allGames);
+    this.gamesService.updateAllSeasonGames(this.allSeasonGames);
+    this.getGames();
+    this.setStandingsToZero();
+    this.calculateStandings();
+  }
+
+  /**
+   * Sets all standings values to zero so that the standings can be calculated again from zero.
+   */
+  setStandingsToZero() {
+    for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+      this.standings[i].gamesPlayed &#x3D; 0;
+      this.standings[i].wins &#x3D; 0;
+      this.standings[i].draws &#x3D; 0;
+      this.standings[i].losses &#x3D; 0;
+      this.standings[i].gf &#x3D; 0;
+      this.standings[i].ga &#x3D; 0;
+      this.standings[i].gd &#x3D; 0;
+      this.standings[i].points &#x3D; 0;
+    }
+    this.gamesService.updateStandings(this.standings);
+  }
+
+  /**
+   * Changes the selected team in the standings so that you can see which two teams in the standings are currently shown in match details
+   */
+  changeSelectedTeams() {
+    this.currentTeamSubscription &#x3D;
+      this.gamesService.currentTeamsSource.subscribe((data) &#x3D;&gt; {
+        for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+          const element &#x3D; this.standings[i];
+
+          if (element.team &#x3D;&#x3D;&#x3D; this.games[data].home) {
+            this.standings[i].current &#x3D; &#x27;home&#x27;;
+          } else if (element.team &#x3D;&#x3D;&#x3D; this.games[data].away) {
+            this.standings[i].current &#x3D; &#x27;away&#x27;;
+          } else {
+            this.standings[i].current &#x3D; &#x27;&#x27;;
+          }
+        }
+      });
+  }
+
+  /**
+   * Calculates the standings depending on how the games ended, skips games without a valid result and sorts them afterwads.
+   */
+  calculateStandings() {
+    for (let i &#x3D; 0; i &lt; this.allGames.length; i++) {
+      if (i &gt;&#x3D; this.leagueDetails.gamedays) {
+        continue;
+      }
+      const gameday &#x3D; this.allGames[i];
+      for (const game of gameday) {
+        if (game.fulltimeHome &#x3D;&#x3D;&#x3D; null) {
+          continue;
+        }
+        if (game.fulltimeHome &gt; game.fulltimeAway) {
+          this.calculateStandingsValues(game.home, 1, 1, 0, 0, game.fulltimeHome, 3, game.away, 1, 0, 0, 1, game.fulltimeAway, 0);
+        } else if (game.fulltimeHome &lt; game.fulltimeAway) {
+          this.calculateStandingsValues(game.home, 1, 0, 0, 1, game.fulltimeHome, 0, game.away, 1, 1, 0, 0, game.fulltimeAway, 3);
+        } else {
+          this.calculateStandingsValues(game.home, 1, 0, 1, 0, game.fulltimeHome, 1, game.away, 1, 0, 1, 0, game.fulltimeAway, 1);
+        }
+      }
+      if (i &#x3D;&#x3D;&#x3D; this.allGames.length - 2) {
+        this.previousStandings &#x3D; JSON.parse(JSON.stringify(this.standings)); // Bad performance but best non third party solution I found
+        this.calculateGoalDifferenceAndPenalties(this.previousStandings);
+      }
+    }
+    if (this.allGames.length &lt; 2) {
+      this.previousStandings &#x3D; JSON.parse(JSON.stringify(this.standings)); // Bad performance but best non third party solution I found
+      this.calculateGoalDifferenceAndPenalties(this.previousStandings);
+    }
+    this.calculateGoalDifferenceAndPenalties(this.standings);
+    this.sortStandings();
+  }
+
+  /**
+   * Calculates the goal difference and penalties if applicable for the passed standings
+   *
+   * @param {any} selectedStandings - The standings for which this should be calculated
+   */
+  calculateGoalDifferenceAndPenalties(selectedStandings: any) {
+    for (let i &#x3D; 0; i &lt; selectedStandings.length; i++) {
+      const element &#x3D; selectedStandings[i];
+      selectedStandings[i].gd &#x3D; element.gf - element.ga;
+    }
+    if (this.leagueDetails.hasPenalties) {
+      for (const penalty of this.leagueDetails.penalties) {
+        for (const team of selectedStandings) {
+          if (team.team &#x3D;&#x3D;&#x3D; penalty.team) {
+            team.points -&#x3D; penalty.points;
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Sorts the standings and previous standings checks if it&#x27;s gameday 1.
+   */
+  sortStandings() {
+    this.previousStandings.sort(function (a: any, b: any) {
+      return b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
+    });
+
+    this.standings.sort(function (a: any, b: any) {
+      return b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
+    });
+
+    this.gamesService.updateStandings(this.standings);
+
+    if (this.leagueDetails.gameday &gt; 1) {
+      this.checkForStandingsChanges();
+    } else {
+      for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+        this.changedStandings[i] &#x3D; 0;
+      }
+    }
+  }
+
+  /**
+   * It checks how the team changed from the gameday before to this gameday and saves this in the changedStandings array.
+   */
+  checkForStandingsChanges() {
+    this.changedStandings &#x3D; [];
+    for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+      const place &#x3D; this.standings[i];
+      if (place.team !&#x3D;&#x3D; this.previousStandings[i].team) {
+        for (let j &#x3D; 0; j &lt; this.previousStandings.length; j++) {
+          const element &#x3D; this.previousStandings[j];
+          const team &#x3D; place.team;
+          if (element.team &#x3D;&#x3D;&#x3D; team) {
+            this.changedStandings[i] &#x3D; j - i;
+            break;
+          }
+        }
+      }
+      else {
+        this.changedStandings[i] &#x3D; 0;
+      }
+    }
+  }
+
+  /**
+   * Changes the values in the standings for the specific teams.
+   *
+   * @param {string} hName - The home team&#x27;s name
+   * @param {number} hGP - The home team&#x27;s change of games played
+   * @param {number} hW - The home team&#x27;s change of wins
+   * @param {number} hD - The home team&#x27;s change of draws
+   * @param {number} hL - The home team&#x27;s change of losses
+   * @param {number} hG - The home team&#x27;s change of goals scored
+   * @param {number} hP - The home team&#x27;s change of points
+   * @param {string} aName - The away team&#x27;s name
+   * @param {number} aGP - The away team&#x27;s change of games played
+   * @param {number} aW - The away team&#x27;s change of wins
+   * @param {number} aD - The away team&#x27;s change of draws
+   * @param {number} aL - The away team&#x27;s change of losses
+   * @param {number} aG - The away team&#x27;s change of goals scored
+   * @param {number} aP - The away team&#x27;s change of points
+   */
+  calculateStandingsValues(
+    hName: string, hGP: number, hW: number, hD: number, hL: number, hG: number, hP: number,
+    aName: string, aGP: number, aW: number, aD: number, aL: number, aG: number, aP: number
+  ) {
+    for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+      const element &#x3D; this.standings[i];
+      if (element.team &#x3D;&#x3D;&#x3D; hName) {
+        this.standings[i].gamesPlayed +&#x3D; hGP;
+        this.standings[i].wins +&#x3D; hW;
+        this.standings[i].draws +&#x3D; hD;
+        this.standings[i].losses +&#x3D; hL;
+        this.standings[i].gf +&#x3D; hG;
+        this.standings[i].ga +&#x3D; aG;
+        this.standings[i].points +&#x3D; hP;
+      } else if (element.team &#x3D;&#x3D;&#x3D; aName) {
+        this.standings[i].gamesPlayed +&#x3D; aGP;
+        this.standings[i].wins +&#x3D; aW;
+        this.standings[i].draws +&#x3D; aD;
+        this.standings[i].losses +&#x3D; aL;
+        this.standings[i].gf +&#x3D; aG;
+        this.standings[i].ga +&#x3D; hG;
+        this.standings[i].points +&#x3D; aP;
+      }
+    }
+  }
+
+  /**
+   * Changes the standings value after a game&#x27;s result has changed depending on how the game result was before and how it is now and sorts the standings again.
+   * This is a huge function because it checks many different game outcomes.
+   *
+   * @param {number} index - The gameday index of the game
+   * @param {number} homeGoals - The new amount of goals the home team scored
+   * @param {number} awayGoals - The new amount of goals the away team scored
+   */
+  changeStandings(index: number, homeGoals: number, awayGoals: number) {
+    if (homeGoals &lt; 0 || awayGoals &lt; 0) {
+      return;
+    }
+    const game &#x3D; this.games[index];
+    if (game.fulltimeHome &gt; game.fulltimeAway &amp;&amp; game.fulltimeAway !&#x3D; null) {
+      if (homeGoals &lt; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, -1, 0, 1, -3, game.away, 0, 1, 0, -1, 3);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, -1, 1, 0, -2, game.away, 0, 0, 1, -1, 1);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; null || awayGoals &#x3D;&#x3D;&#x3D; null) {
+        this.changeStandingsValues(game.home, -1, -1, 0, 0, -3, game.away, -1, 0, 0, -1, 0);
+      }
+    } else if (
+      game.fulltimeHome &lt; game.fulltimeAway &amp;&amp;
+      game.fulltimeHome !&#x3D; null
+    ) {
+      if (homeGoals &gt; awayGoals &amp;&amp; awayGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, 1, 0, -1, 3, game.away, 0, -1, 0, 1, -3);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, 0, 1, -1, 1, game.away, 0, -1, 1, 0, -2);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; null || awayGoals &#x3D;&#x3D;&#x3D; null) {
+        this.changeStandingsValues(game.home, -1, 0, 0, -1, 0, game.away, -1, -1, 0, 0, -3);
+      }
+    } else if (
+      game.fulltimeHome &#x3D;&#x3D;&#x3D; game.fulltimeAway &amp;&amp;
+      game.fulltimeHome !&#x3D; null
+    ) {
+      if (homeGoals &gt; awayGoals &amp;&amp; awayGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, 1, -1, 0, 2, game.away, 0, 0, -1, 1, -1);
+      } else if (homeGoals &lt; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 0, 0, -1, 1, -1, game.away, 0, 1, -1, 0, 2);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; null || awayGoals &#x3D;&#x3D;&#x3D; null) {
+        this.changeStandingsValues(game.home, -1, 0, -1, 0, -1, game.away, -1, 0, -1, 0, -1);
+      }
+    } else if (
+      (game.fulltimeHome &#x3D;&#x3D;&#x3D; null &amp;&amp; game.fulltimeAway !&#x3D; null) ||
+      (game.fulltimeHome !&#x3D; null &amp;&amp; game.fulltimeAway &#x3D;&#x3D;&#x3D; null) ||
+      (game.fulltimeHome &#x3D;&#x3D;&#x3D; null &amp;&amp; game.fulltimeAway &#x3D;&#x3D;&#x3D; null)
+    ) {
+      if (homeGoals &gt; awayGoals &amp;&amp; awayGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 1, 1, 0, 0, 3, game.away, 1, 0, 0, 1, 0);
+      } else if (homeGoals &lt; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 1, 0, 0, 1, 0, game.away, 1, 1, 0, 0, 3);
+      } else if (homeGoals &#x3D;&#x3D;&#x3D; awayGoals &amp;&amp; homeGoals !&#x3D; null) {
+        this.changeStandingsValues(game.home, 1, 0, 1, 0, 1, game.away, 1, 0, 1, 0, 1);
+      }
+    }
+
+    this.changeStandingsGoals(game.home, homeGoals, game.fulltimeHome, game.away, awayGoals, game.fulltimeAway);
+
+    this.games[index].fulltimeHome &#x3D; homeGoals;
+    this.games[index].fulltimeAway &#x3D; awayGoals;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].fulltimeHome &#x3D; homeGoals;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].fulltimeAway &#x3D; awayGoals;
+
+    this.gamesService.updateGames(this.games);
+    this.gamesService.updateAllSeasonGames(this.allSeasonGames);
+    this.sortStandings();
+  }
+
+  /**
+   * Changes most values in the standings for the specific teams.
+   *
+   * @param {string} hName - The home team&#x27;s name
+   * @param {number} hGP - The home team&#x27;s change of games played
+   * @param {number} hW - The home team&#x27;s change of wins
+   * @param {number} hD - The home team&#x27;s change of draws
+   * @param {number} hL - The home team&#x27;s change of losses
+   * @param {number} hP - The home team&#x27;s change of points
+   * @param {string} aName - The away team&#x27;s name
+   * @param {number} aGP - The away team&#x27;s change of games played
+   * @param {number} aW - The away team&#x27;s change of wins
+   * @param {number} aD - The away team&#x27;s change of draws
+   * @param {number} aL - The away team&#x27;s change of losses
+   * @param {number} aP - The away team&#x27;s change of points
+   */
+  changeStandingsValues(
+    hName: string, hGP: number, hW: number, hD: number, hL: number, hP: number,
+    aName: string, aGP: number, aW: number, aD: number, aL: number, aP: number
+  ) {
+    if (this.leagueDetails.gameday &gt; this.leagueDetails.gamedays) {
+      return;
+    }
+    for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+      const element &#x3D; this.standings[i];
+      if (element.team &#x3D;&#x3D;&#x3D; hName) {
+        this.standings[i].gamesPlayed +&#x3D; hGP;
+        this.standings[i].wins +&#x3D; hW;
+        this.standings[i].draws +&#x3D; hD;
+        this.standings[i].losses +&#x3D; hL;
+        this.standings[i].points +&#x3D; hP;
+      } else if (element.team &#x3D;&#x3D;&#x3D; aName) {
+        this.standings[i].gamesPlayed +&#x3D; aGP;
+        this.standings[i].wins +&#x3D; aW;
+        this.standings[i].draws +&#x3D; aD;
+        this.standings[i].losses +&#x3D; aL;
+        this.standings[i].points +&#x3D; aP;
+      }
+    }
+  }
+
+  /**
+   * Changes the goals for and goals against values in the standings for the specific teams and calculates the goal difference for each team.
+   *
+   * @param {string} hName - The home team&#x27;s name
+   * @param {number} hG - The home team&#x27;s new amount of goals scored
+   * @param {number} hFG - The home team&#x27;s old amount of goals scored
+   * @param {string} aName - The away team&#x27;s name
+   * @param {number} aG - The away team&#x27;s new amount of goals scored
+   * @param {number} aFG - The away team&#x27;s old amount of goals scored
+   */
+  changeStandingsGoals(hName: string, hG: number, hFG: number, aName: string, aG: number, aFG: number) {
+    if (this.leagueDetails.gameday &gt; this.leagueDetails.gamedays) {
+      return;
+    }
+    for (let i &#x3D; 0; i &lt; this.standings.length; i++) {
+      const element &#x3D; this.standings[i];
+      if (element.team &#x3D;&#x3D;&#x3D; hName) {
+        this.standings[i].gf +&#x3D; hG - hFG;
+        this.standings[i].ga +&#x3D; aG - aFG;
+        this.standings[i].gd &#x3D; this.standings[i].gf - this.standings[i].ga;
+      } else if (element.team &#x3D;&#x3D;&#x3D; aName) {
+        this.standings[i].gf +&#x3D; aG - aFG;
+        this.standings[i].ga +&#x3D; hG - hFG;
+        this.standings[i].gd &#x3D; this.standings[i].gf - this.standings[i].ga;
+      }
+    }
+  }
+
+  /**
+   * Changes the halftime for and goals against values in the standings for the specific teams.
+   *
+   * @param {number} index - The gameday index of the game
+   * @param {number} homeHalftimeGoals - The home team&#x27;s amount of goals scored at halftime
+   * @param {number} awayHalftimeGoals - The away team&#x27;s amount of goals scored at halftime
+   */
+  changeHalftime(
+    index: number,
+    homeHalftimeGoals: number,
+    awayHalftimeGoals: number
+  ) {
+    this.games[index].halftimeHome &#x3D; homeHalftimeGoals;
+    this.games[index].halftimeAway &#x3D; awayHalftimeGoals;
+
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].halftimeHome &#x3D;
+      homeHalftimeGoals;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].halftimeAway &#x3D;
+      awayHalftimeGoals;
+
+    this.gamesService.updateGames(this.games);
+    this.gamesService.updateAllSeasonGames(this.allSeasonGames);
+  }
+
+  /**
+   * Changes the displayed season of the league.
+   *
+   * @param {number} season - The now selected season
+   */
+  changeSeason(season: number) {
+    let changeSeason &#x3D; +this.leagueDetails.season + season;
+    let newSeason &#x3D; this.leagueDetails.leagueName
+      .slice(0, -4)
+      .concat(changeSeason.toString());
+
+    this.leagueInfoService
+      .doesLeagueExist(newSeason)
+      .pipe(take(1))
+      .subscribe((exists) &#x3D;&gt; {
+        if (exists) {
+          this.router.navigate([&#x60;../${newSeason}&#x60;], { relativeTo: this.route });
+        }
+      });
+  }
+
+  /**
+   * Changes the displayed gameday for the league&#x27;s season.
+   *
+   * @param {number} index - The now selected gameday
+   */
+  changeGameday(index: number) {
+    if (this.allSeasonGames[index - 1]) {
+      window.scrollTo(0, 0);
+      this.leagueDetails.gameday &#x3D; index;
+      this.gamesService.changeGameday(this.leagueDetails.gameday);
+      this.getAllGames();
+    }
+  }
+
+  /**
+   * Changes the stats in the games array.
+   *
+   * @param index - The index of the game
+   * @param possessionHome - The amount of home possession in %
+   * @param possessionAway - The amount of away possession in %
+   * @param shotsHome - The home team&#x27;s amount of shots
+   * @param shotsAway - The away team&#x27;s amount of shots
+   * @param shotsOnGoalHome - The home team&#x27;s amount of shots on goal
+   * @param shotsOnGoalAway - The away team&#x27;s amount of shots on goal
+   * @param cornersHome - The home team&#x27;s amount of corners
+   * @param cornersAway - The away team&#x27;s amount of corners
+   */
+  changeStats(index: number, possessionHome: number, possessionAway: number, shotsHome: number, shotsAway: number, shotsOnGoalHome: number, shotsOnGoalAway: number, cornersHome: number, cornersAway: number) {
+    this.games[index].possessionHome &#x3D; possessionHome;
+    this.games[index].possessionAway &#x3D; possessionAway;
+    this.games[index].shotsHome &#x3D; shotsHome;
+    this.games[index].shotsAway &#x3D; shotsAway;
+    this.games[index].shotsOnGoalHome &#x3D; shotsOnGoalHome;
+    this.games[index].shotsOnGoalAway &#x3D; shotsOnGoalAway;
+    this.games[index].cornersHome &#x3D; cornersHome;
+    this.games[index].cornersAway &#x3D; cornersAway;
+
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].possessionHome &#x3D;
+      possessionHome;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].possessionAway &#x3D;
+      possessionAway;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].shotsHome &#x3D;
+      shotsHome;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].shotsAway &#x3D;
+      shotsAway;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].shotsOnGoalHome &#x3D;
+      shotsOnGoalHome;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].shotsOnGoalAway &#x3D;
+      shotsOnGoalAway;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].cornersHome &#x3D;
+      cornersHome;
+    this.allSeasonGames[this.leagueDetails.gameday - 1][index].cornersAway &#x3D;
+      cornersAway;
+
+    this.gamesService.updateGames(this.games);
+    this.gamesService.updateAllSeasonGames(this.allSeasonGames);
+  }
+
+  /**
+   * Closes the match details.
+   */
+  closeMatchDetails() {
+    window.scrollTo(0, 0);
+    setTimeout(() &#x3D;&gt; {
+      this.showMatchDetails &#x3D; false;
+    }, 500);
+  }
+
+  /**
+   * Updates the league data to the current state in the firestore.
+   */
+  onUpdateLeagueData() {
+    localStorage.removeItem(&#x60;${this.leagueDetails.leagueName}-games&#x60;);
+    window.location.reload();
+  }
+
+  /**
+   * Unsubscribes to all possible subscriptions if necessary.
+   */
+  ngOnDestroy(): void {
+    this.currentMatchDetailsSubscription.unsubscribe();
+    if (this.routeSubscription) {
+      this.routeSubscription.unsubscribe();
+    }
+    if (this.currentTeamSubscription) {
+      this.currentTeamSubscription.unsubscribe();
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;fixtures-and-standings&quot;&gt;
+  &lt;div class&#x3D;&quot;fixtures-and-match-details my-3&quot;&gt;
+    &lt;div class&#x3D;&quot;season-selection&quot;&gt;
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-sm me-2 ta-c-w-50&quot; (click)&#x3D;&quot;changeSeason(-1)&quot;&gt;&amp;lt;&lt;/button&gt;
+      &lt;span&gt;{{ leagueDetails.season }}/{{ +leagueDetails.season + 1 - 2000 }}&lt;/span&gt;
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-sm ms-2 ta-c-w-50&quot; (click)&#x3D;&quot;changeSeason(1)&quot;&gt;&amp;gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;app-fixtures&gt;&lt;/app-fixtures&gt;
+
+    &lt;div class&#x3D;&quot;gameday-view&quot;&gt;
+      &lt;span&gt;Gameday&lt;/span&gt;
+      &lt;div class&#x3D;&quot;gameday-selection&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary me-2 ta-c-w-50&quot; (click)&#x3D;&quot;changeGameday(1)&quot;&gt;&amp;laquo;&lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary me-2 ta-c-w-50&quot;
+          (click)&#x3D;&quot;changeGameday(leagueDetails.gameday - 1)&quot;&gt;&amp;lt;&lt;/button&gt;
+        &lt;input (change)&#x3D;&quot;changeGameday(+selectedGameday.value)&quot; [value]&#x3D;&quot;leagueDetails.gameday&quot;
+          class&#x3D;&quot;ms-2 me-2 ta-c-w-50&quot; #selectedGameday&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary ms-2 ta-c-w-50&quot;
+          (click)&#x3D;&quot;changeGameday(leagueDetails.gameday + 1)&quot;&gt;&amp;gt;&lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary ms-2 ta-c-w-50&quot;
+          (click)&#x3D;&quot;changeGameday(leagueDetails.gamedays)&quot;&gt;&amp;raquo;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;mt-3&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; (click)&#x3D;&quot;onUpdateLeagueData()&quot;&gt;Update league data&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;app-match-details *ngIf&#x3D;&quot;showMatchDetails&quot;
+      (changeStandingsEvent)&#x3D;&quot;changeStandings($event.index, $event.homeGoals, $event.awayGoals)&quot;
+      (changeHalftimeEvent)&#x3D;&quot;changeHalftime($event.index, $event.homeHalftimeGoals, $event.awayHalftimeGoals)&quot;
+      (changeStats)&#x3D;&quot;changeStats($event.index, $event.possessionHome, $event.possessionAway, $event.shotsHome, $event.shotsAway, $event.shotsOnGoalHome, $event.shotsOnGoalAway, $event.cornersHome, $event.cornersAway)&quot;
+      (closeMatchDetailsEvent)&#x3D;&quot;closeMatchDetails()&quot;&gt;
+    &lt;/app-match-details&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;table-responsive&quot;&gt;
+    &lt;table class&#x3D;&quot;table table-striped align-middle&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;Pos&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-r&quot; scope&#x3D;&quot;col&quot;&gt;Team&lt;/th&gt;
+          &lt;th class&#x3D;&quot;d-none d-lg-table-cell ta-c&quot; scope&#x3D;&quot;col&quot;&gt;GP&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;W&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;D&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;L&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;GF:GA&lt;/th&gt;
+          &lt;th class&#x3D;&quot;d-none d-lg-table-cell ta-c&quot; scope&#x3D;&quot;col&quot;&gt;GD&lt;/th&gt;
+          &lt;th class&#x3D;&quot;ta-c&quot; scope&#x3D;&quot;col&quot;&gt;Pts&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr *ngFor&#x3D;&quot;let standing of standings; let i &#x3D; index&quot; [class.current-team-home]&#x3D;&quot;standing.current &#x3D;&#x3D;&#x3D; &#x27;home&#x27;&quot;
+          [class.current-team-away]&#x3D;&quot;standing.current &#x3D;&#x3D;&#x3D; &#x27;away&#x27;&quot;&gt;
+          &lt;td [class.g1]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;g1&#x27;&quot; [class.g2]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;g2&#x27;&quot;
+            [class.g3]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;g3&#x27;&quot; [class.g4]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;g4&#x27;&quot;
+            [class.g5]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;g5&#x27;&quot; [class.rel2]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;rel2&#x27;&quot;
+            [class.rel]&#x3D;&quot;leagueDetails.specialPos[i] &#x3D;&#x3D;&#x3D; &#x27;rel&#x27;&quot; [class.white-text]&#x3D;&quot;leagueDetails.specialPos[i]&quot;
+            class&#x3D;&quot;ta-c&quot;&gt;{{ i+1 }}
+          &lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot; *ngIf&#x3D;&quot;changedStandings[i] &#x3D;&#x3D;&#x3D; 0&quot;&gt;-&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c betterS&quot; *ngIf&#x3D;&quot;changedStandings[i] &gt; 0&quot;&gt;&amp;#9650; +{{ changedStandings[i] }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c worseS&quot; *ngIf&#x3D;&quot;changedStandings[i] &lt; 0&quot;&gt;&amp;#9660; {{ changedStandings[i] }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;&lt;img [src]&#x3D;&quot;standing.logo&quot;&gt;&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-r&quot;&gt;{{ standing.team }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;d-none d-lg-table-cell ta-c&quot;&gt;{{ standing.gamesPlayed }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;{{ standing.wins }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;{{ standing.draws }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;{{ standing.losses }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;{{ standing.gf }}:{{ standing.ga }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;d-none d-lg-table-cell ta-c&quot;&gt;{{ standing.gd }}&lt;/td&gt;
+          &lt;td class&#x3D;&quot;ta-c&quot;&gt;{{ standing.points }}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;div class&#x3D;&quot;penalties-container&quot; *ngIf&#x3D;&quot;leagueDetails.hasPenalties&quot;&gt;
+      &lt;p *ngFor&#x3D;&quot;let penalty of leagueDetails.penalties&quot;&gt;{{ penalty.team }} - {{ penalty.points }} points deducted&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./league.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">app-fixtures {
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+app-match-details {
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.fixtures-and-standings {
+  display: flex;
+  justify-content: space-around;
+
+  @media(max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.fixtures-and-match-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-responsive table tbody td img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.gameday-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameday-selection {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.current-team-home {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+.current-team-away {
+  background-color: rgba(40, 130, 200, 0.4);
+}
+
+.g1 {
+  background-color: rgb(0, 120, 0);
+}
+
+.g2 {
+  background-color: rgb(0, 180, 0)
+}
+
+.g3 {
+  background-color: rgb(0, 0, 120);
+}
+
+.g4 {
+  background-color: rgb(0, 0, 220);
+}
+
+.g5 {
+  background-color: rgb(128, 128, 128);
+}
+
+.rel2 {
+  background-color: rgb(200, 0, 0);
+}
+
+.rel {
+  background-color: rgb(120, 0, 0);
+}
+
+.white-text {
+  color: white;
+}
+
+.ta-c-w-50 {
+  text-align: center;
+  width: 50px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.betterS {
+  color: green;
+}
+
+.worseS {
+  color: red;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="fixtures-and-standings">  <div class="fixtures-and-match-details my-3">    <div class="season-selection">      <button type="button" class="btn btn-secondary btn-sm me-2 ta-c-w-50" (click)="changeSeason(-1)">&lt;</button>      <span>{{ leagueDetails.season }}/{{ +leagueDetails.season + 1 - 2000 }}</span>      <button type="button" class="btn btn-secondary btn-sm ms-2 ta-c-w-50" (click)="changeSeason(1)">&gt;</button>    </div>    <app-fixtures></app-fixtures>    <div class="gameday-view">      <span>Gameday</span>      <div class="gameday-selection">        <button type="button" class="btn btn-secondary me-2 ta-c-w-50" (click)="changeGameday(1)">&laquo;</button>        <button type="button" class="btn btn-secondary me-2 ta-c-w-50"          (click)="changeGameday(leagueDetails.gameday - 1)">&lt;</button>        <input (change)="changeGameday(+selectedGameday.value)" [value]="leagueDetails.gameday"          class="ms-2 me-2 ta-c-w-50" #selectedGameday>        <button type="button" class="btn btn-secondary ms-2 ta-c-w-50"          (click)="changeGameday(leagueDetails.gameday + 1)">&gt;</button>        <button type="button" class="btn btn-secondary ms-2 ta-c-w-50"          (click)="changeGameday(leagueDetails.gamedays)">&raquo;</button>      </div>      <div class="mt-3">        <button type="button" class="btn btn-secondary" (click)="onUpdateLeagueData()">Update league data</button>      </div>    </div>    <app-match-details *ngIf="showMatchDetails"      (changeStandingsEvent)="changeStandings($event.index, $event.homeGoals, $event.awayGoals)"      (changeHalftimeEvent)="changeHalftime($event.index, $event.homeHalftimeGoals, $event.awayHalftimeGoals)"      (changeStats)="changeStats($event.index, $event.possessionHome, $event.possessionAway, $event.shotsHome, $event.shotsAway, $event.shotsOnGoalHome, $event.shotsOnGoalAway, $event.cornersHome, $event.cornersAway)"      (closeMatchDetailsEvent)="closeMatchDetails()">    </app-match-details>  </div>  <div class="table-responsive">    <table class="table table-striped align-middle">      <thead>        <tr>          <th class="ta-c" scope="col">Pos</th>          <th class="ta-c" scope="col"></th>          <th class="ta-c" scope="col"></th>          <th class="ta-r" scope="col">Team</th>          <th class="d-none d-lg-table-cell ta-c" scope="col">GP</th>          <th class="ta-c" scope="col">W</th>          <th class="ta-c" scope="col">D</th>          <th class="ta-c" scope="col">L</th>          <th class="ta-c" scope="col">GF:GA</th>          <th class="d-none d-lg-table-cell ta-c" scope="col">GD</th>          <th class="ta-c" scope="col">Pts</th>        </tr>      </thead>      <tbody>        <tr *ngFor="let standing of standings; let i = index" [class.current-team-home]="standing.current === \'home\'"          [class.current-team-away]="standing.current === \'away\'">          <td [class.g1]="leagueDetails.specialPos[i] === \'g1\'" [class.g2]="leagueDetails.specialPos[i] === \'g2\'"            [class.g3]="leagueDetails.specialPos[i] === \'g3\'" [class.g4]="leagueDetails.specialPos[i] === \'g4\'"            [class.g5]="leagueDetails.specialPos[i] === \'g5\'" [class.rel2]="leagueDetails.specialPos[i] === \'rel2\'"            [class.rel]="leagueDetails.specialPos[i] === \'rel\'" [class.white-text]="leagueDetails.specialPos[i]"            class="ta-c">{{ i+1 }}          </td>          <td class="ta-c" *ngIf="changedStandings[i] === 0">-</td>          <td class="ta-c betterS" *ngIf="changedStandings[i] > 0">&#9650; +{{ changedStandings[i] }}</td>          <td class="ta-c worseS" *ngIf="changedStandings[i] < 0">&#9660; {{ changedStandings[i] }}</td>          <td class="ta-c"><img [src]="standing.logo"></td>          <td class="ta-r">{{ standing.team }}</td>          <td class="d-none d-lg-table-cell ta-c">{{ standing.gamesPlayed }}</td>          <td class="ta-c">{{ standing.wins }}</td>          <td class="ta-c">{{ standing.draws }}</td>          <td class="ta-c">{{ standing.losses }}</td>          <td class="ta-c">{{ standing.gf }}:{{ standing.ga }}</td>          <td class="d-none d-lg-table-cell ta-c">{{ standing.gd }}</td>          <td class="ta-c">{{ standing.points }}</td>        </tr>      </tbody>    </table>    <div class="penalties-container" *ngIf="leagueDetails.hasPenalties">      <p *ngFor="let penalty of leagueDetails.penalties">{{ penalty.team }} - {{ penalty.points }} points deducted</p>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasketballComponent', 'selector': 'app-basketball'},{'name': 'DataPrivacyComponent', 'selector': 'app-data-privacy'},{'name': 'FixturesComponent', 'selector': 'app-fixtures'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LeagueComponent', 'selector': 'app-league'},{'name': 'LegalNoticeComponent', 'selector': 'app-legal-notice'},{'name': 'MatchDetailsComponent', 'selector': 'app-match-details'},{'name': 'SoccerComponent', 'selector': 'app-soccer'},{'name': 'SportsComponent', 'selector': 'app-sports'},{'name': 'StartPageComponent', 'selector': 'app-start-page'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LeagueComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LeagueComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

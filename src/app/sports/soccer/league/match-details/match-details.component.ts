@@ -92,7 +92,7 @@ export class MatchDetailsComponent implements OnInit, OnDestroy {
       this.calculateStats();
       this.formatDate();
 
-      window.scrollTo(0, document.body.scrollHeight);
+      window.scrollTo(0, 600);
     });
   }
 

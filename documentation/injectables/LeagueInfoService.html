@@ -1,0 +1,810 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sports-home documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sports-home documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >LeagueInfoService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/league-info.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#leagueDetails" >leagueDetails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#doesLeagueExist" >doesLeagueExist</a>
+                            </li>
+                            <li>
+                                <a href="#fetchLeagueInfo" >fetchLeagueInfo</a>
+                            </li>
+                            <li>
+                                <a href="#fetchLeagueInfoTemplate" >fetchLeagueInfoTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#getLeagueInfo" >getLeagueInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(firestore: AngularFirestore)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/league-info.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>firestore</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFirestore</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="doesLeagueExist"></a>
+                    <span class="name">
+                        <span ><b>doesLeagueExist</b></span>
+                        <a href="#doesLeagueExist"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>doesLeagueExist(leagueName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/shared/league-info.service.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if the league exists in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>leagueName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The name of the league</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>If the league exists</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchLeagueInfo"></a>
+                    <span class="name">
+                        <span ><b>fetchLeagueInfo</b></span>
+                        <a href="#fetchLeagueInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchLeagueInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/shared/league-info.service.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Fetches all the league info to the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchLeagueInfoTemplate"></a>
+                    <span class="name">
+                        <span ><b>fetchLeagueInfoTemplate</b></span>
+                        <a href="#fetchLeagueInfoTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchLeagueInfoTemplate(leagueName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, gamedays: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, amountTeams: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, gamesPerGameday: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, specialPos: Array<string>, penalties?: Array<literal type>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/shared/league-info.service.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the league info</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>leagueName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The selected league season name</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The id of the league in the API</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gamedays</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The amount of gamedays this season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>amountTeams</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The amount of teams this season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gamesPerGameday</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The amount of games per gameday this season</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>specialPos</td>
+                                    <td>
+                                            <code>Array&lt;string&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Contains the information for the special position assignments</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>penalties</td>
+                                    <td>
+                                            <code>Array&lt;literal type&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Contains the information for what teams got point penalties</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLeagueInfo"></a>
+                    <span class="name">
+                        <span ><b>getLeagueInfo</b></span>
+                        <a href="#getLeagueInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLeagueInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/shared/league-info.service.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the league info from the database</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <ul>
+<li>The league info</li>
+</ul>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leagueDetails"></a>
+                    <span class="name">
+                        <span ><b>leagueDetails</b></span>
+                        <a href="#leagueDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/leagueDetails.html" target="_self" >leagueDetails</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/shared/league-info.service.ts:8</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { AngularFirestore } from &#x27;@angular/fire/firestore&#x27;;
+import { map, take } from &#x27;rxjs/operators&#x27;;
+import { leagueDetails } from &#x27;../sports/soccer/league/league.component&#x27;;
+
+@Injectable({ providedIn: &#x27;root&#x27; })
+export class LeagueInfoService {
+  leagueDetails: leagueDetails &#x3D; {
+    leagueName: &#x27;&#x27;,
+    season: &#x27;&#x27;,
+    leagueId: 0,
+    gameday: 0,
+    gamedays: 0,
+    amountTeams: 0,
+    gamesPerGameday: 0,
+    specialPos: [&#x27;&#x27;],
+    penalties: [{ team: &#x27;&#x27;, points: 0 }],
+    hasPenalties: false
+  };
+
+  constructor(private firestore: AngularFirestore) { }
+
+  /**
+   * Fetches all the league info to the database.
+   */
+  fetchLeagueInfo() {
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2016&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g1&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2017&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2018&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2019&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2020&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-1-2021&#x27;, 39, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-2-2020&#x27;, 40, 46, 24, 12, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;], [{ team: &#x27;Sheffield Wednesday&#x27;, points: 6 }]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-2-2021&#x27;, 40, 46, 24, 12, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-3-2020&#x27;, 41, 46, 24, 12, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-3-2021&#x27;, 41, 46, 24, 12, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-eng-4-2021&#x27;, 42, 46, 24, 12, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2016&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2017&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2018&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2019&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2020&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g1&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-esp-1-2021&#x27;, 140, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-fin-1-2021&#x27;, 244, 22, 12, 6, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-fra-1-2020&#x27;, 61, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-fra-1-2021&#x27;, 61, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2016&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2017&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2018&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2019&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2020&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-1-2021&#x27;, 78, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-2-2021&#x27;, 79, 34, 18, 9, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ger-11-2021&#x27;, 81, 0, 64, 32, [&#x27;g1&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2016&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g2&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2017&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2018&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;], [{ team: &#x27;Chievo&#x27;, points: 3 }]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2019&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g4&#x27;, &#x27;g3&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2020&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-ita-1-2021&#x27;, 135, 38, 20, 10, [&#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g1&#x27;, &#x27;g3&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-nor-1-2021&#x27;, 103, 30, 16, 8, [&#x27;g2&#x27;, &#x27;g5&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-swe-1-2021&#x27;, 113, 30, 16, 8, [&#x27;g2&#x27;, &#x27;g5&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel2&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-tur-1-2021&#x27;, 203, 38, 20, 10, [&#x27;g2&#x27;, &#x27;g2&#x27;, &#x27;g5&#x27;, &#x27;g5&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;, &#x27;rel&#x27;]);
+
+    this.fetchLeagueInfoTemplate(&#x27;soccer-usa-1-2020&#x27;, 253, 27, 26, 20, [&#x27;g1&#x27;]);
+    this.fetchLeagueInfoTemplate(&#x27;soccer-usa-1-2021&#x27;, 253, 46, 27, 10, [&#x27;g1&#x27;]);
+  }
+
+  /**
+   * Sets the league info
+   *
+   * @param {string} leagueName - The selected league season name
+   * @param {number} id - The id of the league in the API
+   * @param {number} gamedays - The amount of gamedays this season
+   * @param {number} amountTeams - The amount of teams this season
+   * @param {number} gamesPerGameday - The amount of games per gameday this season
+   * @param {Array&lt;string&gt;} specialPos - Contains the information for the special position assignments
+   * @param {Array&lt;{ team: string, points: number }&gt;} penalties - Contains the information for what teams got point penalties
+   */
+  fetchLeagueInfoTemplate(leagueName: string, id: number, gamedays: number, amountTeams: number, gamesPerGameday: number, specialPos: Array&lt;string&gt;, penalties?: Array&lt;{ team: string, points: number }&gt;
+  ) {
+    let hasPenalties &#x3D; false;
+    if (!penalties) {
+      penalties &#x3D; [{ team: &#x27;&#x27;, points: 0 }];
+    } else {
+      hasPenalties &#x3D; true;
+    }
+
+    this.firestore.collection(&#x60;${leagueName}&#x60;).doc(&#x27;league-info&#x27;).set({
+      id: id,
+      gamedays: gamedays,
+      amountTeams: amountTeams,
+      gamesPerGameday: gamesPerGameday,
+      specialPos: specialPos,
+      penalties: penalties,
+      hasPenalties: hasPenalties
+    });
+  }
+
+  /**
+   * Gets the league info from the database
+   *
+   * @returns - The league info
+   */
+  getLeagueInfo() {
+    return this.firestore
+      .collection(this.leagueDetails.leagueName)
+      .doc(&#x27;league-info&#x27;)
+      .valueChanges()
+      .pipe(
+        take(1),
+        map((data: any) &#x3D;&gt; {
+          this.leagueDetails.leagueId &#x3D; data.id;
+          this.leagueDetails.gameday &#x3D; data.gamedays;
+          this.leagueDetails.gamedays &#x3D; data.gamedays;
+          this.leagueDetails.amountTeams &#x3D; data.amountTeams;
+          this.leagueDetails.gamesPerGameday &#x3D; data.gamesPerGameday;
+          this.leagueDetails.specialPos &#x3D; data.specialPos;
+          this.leagueDetails.hasPenalties &#x3D; data.hasPenalties;
+
+          if (data.hasPenalties) {
+            this.leagueDetails.penalties &#x3D; data.penalties;
+          } else {
+            this.leagueDetails.penalties &#x3D; [{ team: &#x27;&#x27;, points: 0 }];
+          }
+
+          return this.leagueDetails;
+        })
+      );
+  }
+
+  /**
+   * Checks if the league exists in the database
+   *
+   * @param {string} leagueName - The name of the league
+   * @returns {boolean} - If the league exists
+   */
+  doesLeagueExist(leagueName: string) {
+    return this.firestore
+      .collection(leagueName)
+      .doc(&#x27;league-info&#x27;)
+      .valueChanges()
+      .pipe(
+        take(1),
+        map((data) &#x3D;&gt; {
+          if (data !&#x3D; undefined) {
+            return true;
+          }
+          return false;
+        })
+      );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'LeagueInfoService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

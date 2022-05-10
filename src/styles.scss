@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.padding-left-and-right {
+  padding-left: 128px;
+  padding-right: 128px;
+
+  @media (max-width: 1050px) {
+      padding: initial;
+  }
+}

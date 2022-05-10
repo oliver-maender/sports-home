@@ -1,9 +1,67 @@
-.image-container {
-  width: 800px;
-  height: 450px;
+.startpage-container {
+  min-height: calc(100vh - 136px);
+  background-color: rgba(90, 185, 234, 1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: circle(750px at 50% 5%);
+  overflow: hidden;
+  // animation: dropIn 2s;
+}
 
-  img {
-    height: 100%;
-    width: 100%;
+.sports-home-headline {
+  font-size: 4rem;
+  font-weight: 900;
+  // padding-top: 128px;
+  margin-top: 6rem;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.sports-home-description {
+  animation-name: slideIn;
+  animation-duration: 2s;
+}
+
+.sports-home-details-text {
+  max-width: 750px;
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  // padding-bottom: 64px;
+}
+
+.sports-home-get-started {
+  animation-name: slideIn;
+  animation-duration: 3s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(1500px);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// @keyframes dropIn {
+//   from {
+//     transform: translateY(-100%);
+//   }
+
+//   to {
+//     transform: translateY(0%);
+//   }
+// }

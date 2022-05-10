@@ -1,0 +1,2199 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sports-home documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sports-home documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MatchDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sports/soccer/league/match-details/match-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-match-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./match-details.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./match-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#away" >away</a>
+                            </li>
+                            <li>
+                                <a href="#awayGoals" >awayGoals</a>
+                            </li>
+                            <li>
+                                <a href="#awayHalftimeGoals" >awayHalftimeGoals</a>
+                            </li>
+                            <li>
+                                <a href="#awayLogo" >awayLogo</a>
+                            </li>
+                            <li>
+                                <a href="#corners" >corners</a>
+                            </li>
+                            <li>
+                                <a href="#cornersAway" >cornersAway</a>
+                            </li>
+                            <li>
+                                <a href="#cornersHome" >cornersHome</a>
+                            </li>
+                            <li>
+                                <a href="#currentMatchDetailsSubscription" >currentMatchDetailsSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#date" >date</a>
+                            </li>
+                            <li>
+                                <a href="#dateComponents" >dateComponents</a>
+                            </li>
+                            <li>
+                                <a href="#home" >home</a>
+                            </li>
+                            <li>
+                                <a href="#homeGoals" >homeGoals</a>
+                            </li>
+                            <li>
+                                <a href="#homeHalftimeGoals" >homeHalftimeGoals</a>
+                            </li>
+                            <li>
+                                <a href="#homeLogo" >homeLogo</a>
+                            </li>
+                            <li>
+                                <a href="#i" >i</a>
+                            </li>
+                            <li>
+                                <a href="#possessionAway" >possessionAway</a>
+                            </li>
+                            <li>
+                                <a href="#possessionHome" >possessionHome</a>
+                            </li>
+                            <li>
+                                <a href="#shots" >shots</a>
+                            </li>
+                            <li>
+                                <a href="#shotsAway" >shotsAway</a>
+                            </li>
+                            <li>
+                                <a href="#shotsHome" >shotsHome</a>
+                            </li>
+                            <li>
+                                <a href="#shotsOnGoal" >shotsOnGoal</a>
+                            </li>
+                            <li>
+                                <a href="#shotsOnGoalAway" >shotsOnGoalAway</a>
+                            </li>
+                            <li>
+                                <a href="#shotsOnGoalHome" >shotsOnGoalHome</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateStats" >calculateStats</a>
+                            </li>
+                            <li>
+                                <a href="#changeDate" >changeDate</a>
+                            </li>
+                            <li>
+                                <a href="#changeHalftime" >changeHalftime</a>
+                            </li>
+                            <li>
+                                <a href="#changeStandings" >changeStandings</a>
+                            </li>
+                            <li>
+                                <a href="#closeMatchDetails" >closeMatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#formatDate" >formatDate</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#saveStats" >saveStats</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeHalftimeEvent" >changeHalftimeEvent</a>
+                            </li>
+                            <li>
+                                <a href="#changeStandingsEvent" >changeStandingsEvent</a>
+                            </li>
+                            <li>
+                                <a href="#changeStats" >changeStats</a>
+                            </li>
+                            <li>
+                                <a href="#closeMatchDetailsEvent" >closeMatchDetailsEvent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(gamesService: <a href="../injectables/GamesService.html" target="_self">GamesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>gamesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GamesService.html" target="_self" >GamesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeHalftimeEvent"></a>
+                        <b>changeHalftimeEvent</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeStandingsEvent"></a>
+                        <b>changeStandingsEvent</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeStats"></a>
+                        <b>changeStats</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeMatchDetailsEvent"></a>
+                        <b>closeMatchDetailsEvent</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateStats"></a>
+                    <span class="name">
+                        <span ><b>calculateStats</b></span>
+                        <a href="#calculateStats"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateStats()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculates the stats.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeDate"></a>
+                    <span class="name">
+                        <span ><b>changeDate</b></span>
+                        <a href="#changeDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeDate(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Changes the date when the user changes it.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeHalftime"></a>
+                    <span class="name">
+                        <span ><b>changeHalftime</b></span>
+                        <a href="#changeHalftime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeHalftime(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, homeHalftimeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, awayHalftimeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Emits an event when the halftiem goals in a game are changed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>homeHalftimeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of halftime goals</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>awayHalftimeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of halftime goals</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStandings"></a>
+                    <span class="name">
+                        <span ><b>changeStandings</b></span>
+                        <a href="#changeStandings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStandings(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, homeGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, awayGoals: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Emits an event when the goals in a game are changed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>homeGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The home team&#39;s amount of goals</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>awayGoals</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The away team&#39;s amount of goals</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>closeMatchDetails</b></span>
+                        <a href="#closeMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeMatchDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Emits an event when the match details get closed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatDate"></a>
+                    <span class="name">
+                        <span ><b>formatDate</b></span>
+                        <a href="#formatDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Formats the date so that it&#39;s converted from ms to a date.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialises the current match details, calculates the stats and formats the date to be shown.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveStats"></a>
+                    <span class="name">
+                        <span ><b>saveStats</b></span>
+                        <a href="#saveStats"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveStats(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Saves the stats of the game and emits an event when they are saved.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="away"></a>
+                    <span class="name">
+                        <span ><b>away</b></span>
+                        <a href="#away"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="awayGoals"></a>
+                    <span class="name">
+                        <span ><b>awayGoals</b></span>
+                        <a href="#awayGoals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="awayHalftimeGoals"></a>
+                    <span class="name">
+                        <span ><b>awayHalftimeGoals</b></span>
+                        <a href="#awayHalftimeGoals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="awayLogo"></a>
+                    <span class="name">
+                        <span ><b>awayLogo</b></span>
+                        <a href="#awayLogo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="corners"></a>
+                    <span class="name">
+                        <span ><b>corners</b></span>
+                        <a href="#corners"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cornersAway"></a>
+                    <span class="name">
+                        <span ><b>cornersAway</b></span>
+                        <a href="#cornersAway"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cornersHome"></a>
+                    <span class="name">
+                        <span ><b>cornersHome</b></span>
+                        <a href="#cornersHome"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentMatchDetailsSubscription"></a>
+                    <span class="name">
+                        <span ><b>currentMatchDetailsSubscription</b></span>
+                        <a href="#currentMatchDetailsSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="date"></a>
+                    <span class="name">
+                        <span ><b>date</b></span>
+                        <a href="#date"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateComponents"></a>
+                    <span class="name">
+                        <span ><b>dateComponents</b></span>
+                        <a href="#dateComponents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    inputDate: &#x27;1970-01-01&#x27;,
+    inputTime: &#x27;00:00&#x27;,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="home"></a>
+                    <span class="name">
+                        <span ><b>home</b></span>
+                        <a href="#home"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="homeGoals"></a>
+                    <span class="name">
+                        <span ><b>homeGoals</b></span>
+                        <a href="#homeGoals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="homeHalftimeGoals"></a>
+                    <span class="name">
+                        <span ><b>homeHalftimeGoals</b></span>
+                        <a href="#homeHalftimeGoals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="homeLogo"></a>
+                    <span class="name">
+                        <span ><b>homeLogo</b></span>
+                        <a href="#homeLogo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="i"></a>
+                    <span class="name">
+                        <span ><b>i</b></span>
+                        <a href="#i"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="possessionAway"></a>
+                    <span class="name">
+                        <span ><b>possessionAway</b></span>
+                        <a href="#possessionAway"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="possessionHome"></a>
+                    <span class="name">
+                        <span ><b>possessionHome</b></span>
+                        <a href="#possessionHome"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shots"></a>
+                    <span class="name">
+                        <span ><b>shots</b></span>
+                        <a href="#shots"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shotsAway"></a>
+                    <span class="name">
+                        <span ><b>shotsAway</b></span>
+                        <a href="#shotsAway"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shotsHome"></a>
+                    <span class="name">
+                        <span ><b>shotsHome</b></span>
+                        <a href="#shotsHome"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shotsOnGoal"></a>
+                    <span class="name">
+                        <span ><b>shotsOnGoal</b></span>
+                        <a href="#shotsOnGoal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shotsOnGoalAway"></a>
+                    <span class="name">
+                        <span ><b>shotsOnGoalAway</b></span>
+                        <a href="#shotsOnGoalAway"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shotsOnGoalHome"></a>
+                    <span class="name">
+                        <span ><b>shotsOnGoalHome</b></span>
+                        <a href="#shotsOnGoalHome"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/sports/soccer/league/match-details/match-details.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, EventEmitter, OnDestroy, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { GamesService } from &#x27;src/app/shared/games.service&#x27;;
+
+@Component({
+  selector: &#x27;app-match-details&#x27;,
+  templateUrl: &#x27;./match-details.component.html&#x27;,
+  styleUrls: [&#x27;./match-details.component.scss&#x27;],
+})
+export class MatchDetailsComponent implements OnInit, OnDestroy {
+  @Output() changeStandingsEvent &#x3D; new EventEmitter&lt;{
+    index: number;
+    homeGoals: number;
+    awayGoals: number;
+  }&gt;();
+
+  @Output() changeHalftimeEvent &#x3D; new EventEmitter&lt;{
+    index: number;
+    homeHalftimeGoals: number;
+    awayHalftimeGoals: number;
+  }&gt;();
+
+  @Output() closeMatchDetailsEvent &#x3D; new EventEmitter&lt;boolean&gt;();
+
+  @Output() changeStats &#x3D; new EventEmitter&lt;{
+    index: number;
+    possessionHome: number;
+    possessionAway: number;
+    shotsHome: number;
+    shotsAway: number;
+    shotsOnGoalHome: number;
+    shotsOnGoalAway: number;
+    cornersHome: number;
+    cornersAway: number;
+  }&gt;();
+
+  i &#x3D; 0;
+  date &#x3D; 0;
+  homeLogo &#x3D; &#x27;&#x27;;
+  home &#x3D; &#x27;&#x27;;
+  homeGoals &#x3D; 0;
+  awayGoals &#x3D; 0;
+  homeHalftimeGoals &#x3D; 0;
+  awayHalftimeGoals &#x3D; 0;
+  away &#x3D; &#x27;&#x27;;
+  awayLogo &#x3D; &#x27;&#x27;;
+  possessionHome &#x3D; 0;
+  possessionAway &#x3D; 0;
+  shots &#x3D; 0;
+  shotsHome &#x3D; 0;
+  shotsAway &#x3D; 0;
+  shotsOnGoal &#x3D; 0;
+  shotsOnGoalHome &#x3D; 0;
+  shotsOnGoalAway &#x3D; 0;
+  corners &#x3D; 0;
+  cornersHome &#x3D; 0;
+  cornersAway &#x3D; 0;
+
+  dateComponents &#x3D; {
+    inputDate: &#x27;1970-01-01&#x27;,
+    inputTime: &#x27;00:00&#x27;,
+  };
+
+  currentMatchDetailsSubscription!: Subscription;
+
+  constructor(private gamesService: GamesService) { }
+
+  /**
+   * Initialises the current match details, calculates the stats and formats the date to be shown.
+   */
+  ngOnInit(): void {
+    this.currentMatchDetailsSubscription &#x3D; this.gamesService.currentMatchDetails.subscribe((data) &#x3D;&gt; {
+      this.i &#x3D; data.i;
+      this.date &#x3D; data.date;
+      this.homeLogo &#x3D; data.homeLogo;
+      this.home &#x3D; data.home;
+      this.homeGoals &#x3D; data.homeGoals;
+      this.awayGoals &#x3D; data.awayGoals;
+      this.homeHalftimeGoals &#x3D; data.homeHalftimeGoals;
+      this.awayHalftimeGoals &#x3D; data.awayHalftimeGoals;
+      this.away &#x3D; data.away;
+      this.awayLogo &#x3D; data.awayLogo;
+      this.possessionHome &#x3D; data.possessionHome;
+      this.possessionAway &#x3D; data.possessionAway
+      this.shotsHome &#x3D; data.shotsHome;
+      this.shotsAway &#x3D; data.shotsAway;
+      this.shotsOnGoalHome &#x3D; data.shotsOnGoalHome;
+      this.shotsOnGoalAway &#x3D; data.shotsOnGoalAway;
+      this.cornersHome &#x3D; data.cornersHome;
+      this.cornersAway &#x3D; data.cornersAway;
+
+      this.calculateStats();
+      this.formatDate();
+
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  }
+
+  /**
+   * Formats the date so that it&#x27;s converted from ms to a date.
+   */
+  formatDate() {
+    let formattedDate &#x3D; new Date(this.date);
+    let newInputDate &#x3D;
+      formattedDate.getFullYear() +
+      &#x27;-&#x27; +
+      (&#x27;0&#x27; + (formattedDate.getMonth() + 1)).slice(-2) +
+      &#x27;-&#x27; +
+      (&#x27;0&#x27; + formattedDate.getDate()).slice(-2);
+
+    let newInputTime &#x3D;
+      (&#x27;0&#x27; + formattedDate.getHours()).slice(-2) +
+      &#x27;:&#x27; +
+      (&#x27;0&#x27; + formattedDate.getMinutes()).slice(-2);
+
+    this.dateComponents.inputDate &#x3D; newInputDate;
+    this.dateComponents.inputTime &#x3D; newInputTime;
+  }
+
+  /**
+   * Emits an event when the goals in a game are changed
+   *
+   * @param index - The index of the game
+   * @param homeGoals - The home team&#x27;s amount of goals
+   * @param awayGoals - The away team&#x27;s amount of goals
+   */
+  changeStandings(index: number, homeGoals: number, awayGoals: number) {
+    this.changeStandingsEvent.emit({ index, homeGoals, awayGoals });
+  }
+
+  /**
+   * Emits an event when the halftiem goals in a game are changed
+   *
+   * @param index - The index of the game
+   * @param homeHalftimeGoals - The home team&#x27;s amount of halftime goals
+   * @param awayHalftimeGoals - The away team&#x27;s amount of halftime goals
+   */
+  changeHalftime(
+    index: number,
+    homeHalftimeGoals: number,
+    awayHalftimeGoals: number
+  ) {
+    if (homeHalftimeGoals !&#x3D; null &amp;&amp; awayHalftimeGoals !&#x3D; null) {
+      this.changeHalftimeEvent.emit({ index, homeHalftimeGoals, awayHalftimeGoals });
+    }
+  }
+
+  /**
+   * Changes the date when the user changes it.
+   *
+   * @param index - The index of the game
+   */
+  changeDate(index: number) {
+    let dateInMilliseconds &#x3D; new Date(&#x60;${this.dateComponents.inputDate}T${this.dateComponents.inputTime}&#x60;).getTime();
+
+    this.gamesService.changeDate(index, dateInMilliseconds);
+  }
+
+  /**
+   * Calculates the stats.
+   */
+  calculateStats() {
+    this.shots &#x3D; this.shotsHome + this.shotsAway;
+    this.shotsOnGoal &#x3D; this.shotsOnGoalHome + this.shotsOnGoalAway;
+    this.corners &#x3D; this.cornersHome + this.cornersAway;
+  }
+
+  /**
+   * Emits an event when the match details get closed.
+   */
+  closeMatchDetails() {
+    this.closeMatchDetailsEvent.emit(true);
+  }
+
+  /**
+   * Saves the stats of the game and emits an event when they are saved.
+   *
+   * @param index - The index of the game
+   */
+  saveStats(index: number) {
+    let possessionHome &#x3D; this.possessionHome;
+    let possessionAway &#x3D; this.possessionAway;
+    let shotsHome &#x3D; this.shotsHome;
+    let shotsAway &#x3D; this.shotsAway;
+    let shotsOnGoalHome &#x3D; this.shotsOnGoalHome;
+    let shotsOnGoalAway &#x3D; this.shotsOnGoalAway;
+    let cornersHome &#x3D; this.cornersHome;
+    let cornersAway &#x3D; this.cornersAway;
+
+    this.changeStats.emit({ index, possessionHome, possessionAway, shotsHome, shotsAway, shotsOnGoalHome, shotsOnGoalAway, cornersHome, cornersAway });
+  }
+
+  ngOnDestroy(): void {
+    this.currentMatchDetailsSubscription.unsubscribe();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;my-5 pt-1 pb-1 px-2 mx-lg-3 match-details-container&quot;&gt;
+  &lt;div class&#x3D;&quot;pb-3 close-button-container&quot;&gt;
+    &lt;button class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;closeMatchDetails()&quot;&gt;&amp;#88;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;date-container p-2&quot;&gt;
+    &lt;input type&#x3D;&quot;date&quot; [(ngModel)]&#x3D;&quot;dateComponents.inputDate&quot; (change)&#x3D;&quot;changeDate(i)&quot;&gt;
+    &lt;input type&#x3D;&quot;time&quot; [(ngModel)]&#x3D;&quot;dateComponents.inputTime&quot; (change)&#x3D;&quot;changeDate(i)&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;main-container&quot;&gt;
+    &lt;div class&#x3D;&quot;logo-container me-3&quot;&gt;
+      &lt;img [src]&#x3D;&quot;homeLogo&quot; alt&#x3D;&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;span class&#x3D;&quot;ta-c-w-100&quot;&gt;{{ home }}&lt;/span&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;homeGoals&quot;&gt;
+    &lt;span&gt;:&lt;/span&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;awayGoals&quot;&gt;
+    &lt;span class&#x3D;&quot;ta-c-w-100&quot;&gt;{{ away }}&lt;/span&gt;
+    &lt;div class&#x3D;&quot;logo-container ms-3&quot;&gt;
+      &lt;img [src]&#x3D;&quot;awayLogo&quot; alt&#x3D;&quot;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;second-row-container&quot;&gt;
+    &lt;span&gt;(&lt;/span&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;homeHalftimeGoals&quot;&gt;
+    &lt;span&gt;:&lt;/span&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;awayHalftimeGoals&quot;&gt;
+    &lt;span&gt;)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;stats-row-container my-2&quot;&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;possessionHome&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+    &lt;div class&#x3D;&quot;statistics-bar&quot;&gt;
+      &lt;span&gt;Possession&lt;/span&gt;
+      &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+        &lt;div class&#x3D;&quot;progress-bar bg-success&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: possessionHome &gt; 0 ? possessionHome + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (possessionHome &gt; 0 ? possessionHome : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+        &lt;div class&#x3D;&quot;progress-bar&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: possessionAway &gt; 0 ? possessionAway + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (possessionAway &gt; 0 ? possessionAway : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;possessionAway&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;stats-row-container my-2&quot;&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;shotsHome&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+    &lt;div class&#x3D;&quot;statistics-bar&quot;&gt;
+      &lt;span&gt;Shots&lt;/span&gt;
+      &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+        &lt;div class&#x3D;&quot;progress-bar bg-success&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: shots &gt; 0 ? shotsHome / shots * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (shots &gt; 0 ? shotsHome / shots * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+        &lt;div class&#x3D;&quot;progress-bar&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: shots &gt; 0 ? shotsAway / shots * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (shots &gt; 0 ? shotsAway / shots * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;shotsAway&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;stats-row-container my-2&quot;&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;shotsOnGoalHome&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+    &lt;div class&#x3D;&quot;statistics-bar&quot;&gt;
+      &lt;span&gt;Shots On Goal&lt;/span&gt;
+      &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+        &lt;div class&#x3D;&quot;progress-bar bg-success&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: shotsOnGoal &gt; 0 ? shotsOnGoalHome / shotsOnGoal * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (shotsOnGoal &gt; 0 ? shotsOnGoalHome / shotsOnGoal * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+        &lt;div class&#x3D;&quot;progress-bar&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: shotsOnGoal &gt; 0 ? shotsOnGoalAway / shotsOnGoal * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (shotsOnGoal &gt; 0 ? shotsOnGoalAway / shotsOnGoal * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;shotsOnGoalAway&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;stats-row-container my-2&quot;&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;cornersHome&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+    &lt;div class&#x3D;&quot;statistics-bar&quot;&gt;
+      &lt;span&gt;Corners&lt;/span&gt;
+      &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+        &lt;div class&#x3D;&quot;progress-bar bg-success&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: corners &gt; 0 ? cornersHome / corners * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (corners &gt; 0 ? cornersHome / corners * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+        &lt;div class&#x3D;&quot;progress-bar&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: corners &gt; 0 ? cornersAway / corners * 100 + &#x27;%&#x27; : 50 + &#x27;%&#x27;}&quot;&gt;{{ (corners &gt; 0 ? cornersAway / corners * 100 : 50) | number: &#x27;1.0-0&#x27; }}%&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class&#x3D;&quot;mx-2 ta-c-mw-20-w-5&quot; type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;cornersAway&quot; (keyup)&#x3D;&quot;calculateStats()&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;pt-3 check-button-container&quot;&gt;
+    &lt;button class&#x3D;&quot;btn btn-success&quot;
+      (click)&#x3D;&quot;changeStandings(i, homeGoals, awayGoals); changeHalftime(i, homeHalftimeGoals, awayHalftimeGoals); saveStats(i); closeMatchDetails()&quot;&gt;&amp;#10003;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./match-details.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type&#x3D;&quot;number&quot;] {
+  -moz-appearance: textfield;
+}
+
+.match-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  width: 700px;
+  max-width: 700px;
+
+  @media(max-width: 1350px) {
+    width: 500px;
+    max-width: 500px;
+  }
+
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.close-button-container {
+  align-self: flex-end;
+}
+
+.check-button-container {
+  align-self: flex-end;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.second-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stats-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.statistics-bar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 75px;
+  height: 75px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.ta-c-mw-20-w-5 {
+  text-align: center;
+  min-width: 20px;
+  width: 5%;
+}
+
+.ta-c-w-100 {
+  text-align: center;
+  width: 100px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="my-5 pt-1 pb-1 px-2 mx-lg-3 match-details-container">  <div class="pb-3 close-button-container">    <button class="btn btn-danger" (click)="closeMatchDetails()">&#88;</button>  </div>  <div class="date-container p-2">    <input type="date" [(ngModel)]="dateComponents.inputDate" (change)="changeDate(i)">    <input type="time" [(ngModel)]="dateComponents.inputTime" (change)="changeDate(i)">  </div>  <div class="main-container">    <div class="logo-container me-3">      <img [src]="homeLogo" alt="">    </div>    <span class="ta-c-w-100">{{ home }}</span>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="homeGoals">    <span>:</span>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="awayGoals">    <span class="ta-c-w-100">{{ away }}</span>    <div class="logo-container ms-3">      <img [src]="awayLogo" alt="">    </div>  </div>  <div class="second-row-container">    <span>(</span>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="homeHalftimeGoals">    <span>:</span>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="awayHalftimeGoals">    <span>)</span>  </div>  <div class="stats-row-container my-2">    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="possessionHome" (keyup)="calculateStats()">    <div class="statistics-bar">      <span>Possession</span>      <div class="progress" style="width: 100%;">        <div class="progress-bar bg-success" [ngStyle]="{\'width\': possessionHome > 0 ? possessionHome + \'%\' : 50 + \'%\'}">{{ (possessionHome > 0 ? possessionHome : 50) | number: \'1.0-0\' }}%</div>        <div class="progress-bar" [ngStyle]="{\'width\': possessionAway > 0 ? possessionAway + \'%\' : 50 + \'%\'}">{{ (possessionAway > 0 ? possessionAway : 50) | number: \'1.0-0\' }}%</div>      </div>    </div>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="possessionAway" (keyup)="calculateStats()">  </div>  <div class="stats-row-container my-2">    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsHome" (keyup)="calculateStats()">    <div class="statistics-bar">      <span>Shots</span>      <div class="progress" style="width: 100%;">        <div class="progress-bar bg-success" [ngStyle]="{\'width\': shots > 0 ? shotsHome / shots * 100 + \'%\' : 50 + \'%\'}">{{ (shots > 0 ? shotsHome / shots * 100 : 50) | number: \'1.0-0\' }}%</div>        <div class="progress-bar" [ngStyle]="{\'width\': shots > 0 ? shotsAway / shots * 100 + \'%\' : 50 + \'%\'}">{{ (shots > 0 ? shotsAway / shots * 100 : 50) | number: \'1.0-0\' }}%</div>      </div>    </div>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsAway" (keyup)="calculateStats()">  </div>  <div class="stats-row-container my-2">    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsOnGoalHome" (keyup)="calculateStats()">    <div class="statistics-bar">      <span>Shots On Goal</span>      <div class="progress" style="width: 100%;">        <div class="progress-bar bg-success" [ngStyle]="{\'width\': shotsOnGoal > 0 ? shotsOnGoalHome / shotsOnGoal * 100 + \'%\' : 50 + \'%\'}">{{ (shotsOnGoal > 0 ? shotsOnGoalHome / shotsOnGoal * 100 : 50) | number: \'1.0-0\' }}%</div>        <div class="progress-bar" [ngStyle]="{\'width\': shotsOnGoal > 0 ? shotsOnGoalAway / shotsOnGoal * 100 + \'%\' : 50 + \'%\'}">{{ (shotsOnGoal > 0 ? shotsOnGoalAway / shotsOnGoal * 100 : 50) | number: \'1.0-0\' }}%</div>      </div>    </div>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="shotsOnGoalAway" (keyup)="calculateStats()">  </div>  <div class="stats-row-container my-2">    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="cornersHome" (keyup)="calculateStats()">    <div class="statistics-bar">      <span>Corners</span>      <div class="progress" style="width: 100%;">        <div class="progress-bar bg-success" [ngStyle]="{\'width\': corners > 0 ? cornersHome / corners * 100 + \'%\' : 50 + \'%\'}">{{ (corners > 0 ? cornersHome / corners * 100 : 50) | number: \'1.0-0\' }}%</div>        <div class="progress-bar" [ngStyle]="{\'width\': corners > 0 ? cornersAway / corners * 100 + \'%\' : 50 + \'%\'}">{{ (corners > 0 ? cornersAway / corners * 100 : 50) | number: \'1.0-0\' }}%</div>      </div>    </div>    <input class="mx-2 ta-c-mw-20-w-5" type="number" [(ngModel)]="cornersAway" (keyup)="calculateStats()">  </div>  <div class="pt-3 check-button-container">    <button class="btn btn-success"      (click)="changeStandings(i, homeGoals, awayGoals); changeHalftime(i, homeHalftimeGoals, awayHalftimeGoals); saveStats(i); closeMatchDetails()">&#10003;</button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasketballComponent', 'selector': 'app-basketball'},{'name': 'DataPrivacyComponent', 'selector': 'app-data-privacy'},{'name': 'FixturesComponent', 'selector': 'app-fixtures'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LeagueComponent', 'selector': 'app-league'},{'name': 'LegalNoticeComponent', 'selector': 'app-legal-notice'},{'name': 'MatchDetailsComponent', 'selector': 'app-match-details'},{'name': 'SoccerComponent', 'selector': 'app-soccer'},{'name': 'SportsComponent', 'selector': 'app-sports'},{'name': 'StartPageComponent', 'selector': 'app-start-page'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MatchDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MatchDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

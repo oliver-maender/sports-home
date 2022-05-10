@@ -1,0 +1,770 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sports-home documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sports-home documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  FixturesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sports/soccer/league/fixtures/fixtures.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-fixtures</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./fixtures.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./fixtures.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentGamesSubscription" >currentGamesSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#games" >games</a>
+                            </li>
+                            <li>
+                                <a href="#matchDetailsJson" >matchDetailsJson</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showMatchDetails" >showMatchDetails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(gamesService: <a href="../injectables/GamesService.html" target="_self">GamesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>gamesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GamesService.html" target="_self" >GamesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialises to listen to changes to the current game</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMatchDetails"></a>
+                    <span class="name">
+                        <span ><b>showMatchDetails</b></span>
+                        <a href="#showMatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showMatchDetails(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the match details to the specific game&#39;s details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The gameday index of the game</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentGamesSubscription"></a>
+                    <span class="name">
+                        <span ><b>currentGamesSubscription</b></span>
+                        <a href="#currentGamesSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="games"></a>
+                    <span class="name">
+                        <span ><b>games</b></span>
+                        <a href="#games"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matchDetailsJson"></a>
+                    <span class="name">
+                        <span ><b>matchDetailsJson</b></span>
+                        <a href="#matchDetailsJson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    i: 0,
+    date: 0,
+    homeLogo: &#x27;&#x27;,
+    awayLogo: &#x27;&#x27;,
+    home: &#x27;&#x27;,
+    away: &#x27;&#x27;,
+    homeGoals: 0,
+    awayGoals: 0,
+    homeHalftimeGoals: 0,
+    awayHalftimeGoals: 0,
+    possessionHome: 0,
+    possessionAway: 0,
+    shotsHome: 0,
+    shotsAway: 0,
+    shotsOnGoalHome: 0,
+    shotsOnGoalAway: 0,
+    cornersHome: 0,
+    cornersAway: 0
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/sports/soccer/league/fixtures/fixtures.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { GamesService } from &#x27;src/app/shared/games.service&#x27;;
+
+@Component({
+  selector: &#x27;app-fixtures&#x27;,
+  templateUrl: &#x27;./fixtures.component.html&#x27;,
+  styleUrls: [&#x27;./fixtures.component.scss&#x27;]
+})
+export class FixturesComponent implements OnInit, OnDestroy {
+
+  games: any &#x3D; [];
+
+  matchDetailsJson &#x3D; {
+    i: 0,
+    date: 0,
+    homeLogo: &#x27;&#x27;,
+    awayLogo: &#x27;&#x27;,
+    home: &#x27;&#x27;,
+    away: &#x27;&#x27;,
+    homeGoals: 0,
+    awayGoals: 0,
+    homeHalftimeGoals: 0,
+    awayHalftimeGoals: 0,
+    possessionHome: 0,
+    possessionAway: 0,
+    shotsHome: 0,
+    shotsAway: 0,
+    shotsOnGoalHome: 0,
+    shotsOnGoalAway: 0,
+    cornersHome: 0,
+    cornersAway: 0
+  };
+
+  currentGamesSubscription!: Subscription;
+
+  constructor(private gamesService: GamesService) { }
+
+  /**
+   * Initialises to listen to changes to the current game
+   */
+  ngOnInit(): void {
+    this.currentGamesSubscription &#x3D; this.gamesService.currentGames.subscribe((games) &#x3D;&gt; {
+      this.games &#x3D; games;
+    });
+  }
+
+  /**
+   * Sets the match details to the specific game&#x27;s details
+   *
+   * @param index - The gameday index of the game
+   */
+  showMatchDetails(index: number) {
+    this.matchDetailsJson.i &#x3D; index;
+    this.matchDetailsJson.date &#x3D; this.games[index].date;
+    this.matchDetailsJson.home &#x3D; this.games[index].home;
+    this.matchDetailsJson.homeGoals &#x3D; this.games[index].fulltimeHome;
+    this.matchDetailsJson.away &#x3D; this.games[index].away;
+    this.matchDetailsJson.awayGoals &#x3D; this.games[index].fulltimeAway;
+    this.matchDetailsJson.homeLogo &#x3D; this.games[index].logoHome;
+    this.matchDetailsJson.awayLogo &#x3D; this.games[index].logoAway;
+    this.matchDetailsJson.homeHalftimeGoals &#x3D; this.games[index].halftimeHome;
+    this.matchDetailsJson.awayHalftimeGoals &#x3D; this.games[index].halftimeAway;
+    this.matchDetailsJson.possessionHome &#x3D; this.games[index].possessionHome;
+    this.matchDetailsJson.possessionAway &#x3D; this.games[index].possessionAway;
+    this.matchDetailsJson.shotsHome &#x3D; this.games[index].shotsHome;
+    this.matchDetailsJson.shotsAway &#x3D; this.games[index].shotsAway;
+    this.matchDetailsJson.shotsOnGoalHome &#x3D; this.games[index].shotsOnGoalHome;
+    this.matchDetailsJson.shotsOnGoalAway &#x3D; this.games[index].shotsOnGoalAway;
+    this.matchDetailsJson.cornersHome &#x3D; this.games[index].cornersHome;
+    this.matchDetailsJson.cornersAway &#x3D; this.games[index].cornersAway;
+
+    this.gamesService.changeMatchDetails(this.matchDetailsJson);
+  }
+
+  ngOnDestroy(): void {
+    this.currentGamesSubscription.unsubscribe();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;fixtures my-5 mx-lg-3&quot;&gt;
+  &lt;div class&#x3D;&quot;game-container&quot; *ngFor&#x3D;&quot;let game of games; let i &#x3D; index&quot; (click)&#x3D;&quot;showMatchDetails(i)&quot;&gt;
+    &lt;div class&#x3D;&quot;date-container p-2&quot;&gt;
+      &lt;span&gt;{{ game.date | date: &#x27;dd.MM.yyyy&#x27; }}&lt;/span&gt;
+      &lt;br&gt;
+      &lt;span&gt;{{ game.date | date: &#x27;HH:mm&#x27; }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;home-logo-container p-1&quot;&gt;
+      &lt;img [src]&#x3D;&quot;game.logoHome&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;home-name p-1&quot; style&#x3D;&quot;text-align: center;&quot;&gt;
+      &lt;span&gt;{{ game.home }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;result p-1&quot;&gt;
+      &lt;span&gt;{{ game.fulltimeHome }} : {{ game.fulltimeAway }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;away-name p-1&quot; style&#x3D;&quot;text-align: center;&quot;&gt;
+      &lt;span&gt;{{ game.away }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;away-logo-container p-1&quot;&gt;
+      &lt;img [src]&#x3D;&quot;game.logoAway&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./fixtures.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.fixtures {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  max-width: 700px;
+
+  @media(max-width: 1350px) {
+    width: 500px;
+    max-width: 500px;
+  }
+
+  @media(max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.game-container {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+
+  &amp;:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+  }
+
+  &amp;:hover {
+    background-color: rgb(220, 220, 220);
+  }
+}
+
+.home-name, .away-name {
+  width: 100px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="fixtures my-5 mx-lg-3">  <div class="game-container" *ngFor="let game of games; let i = index" (click)="showMatchDetails(i)">    <div class="date-container p-2">      <span>{{ game.date | date: \'dd.MM.yyyy\' }}</span>      <br>      <span>{{ game.date | date: \'HH:mm\' }}</span>    </div>    <div class="home-logo-container p-1">      <img [src]="game.logoHome">    </div>    <div class="home-name p-1" style="text-align: center;">      <span>{{ game.home }}</span>    </div>    <div class="result p-1">      <span>{{ game.fulltimeHome }} : {{ game.fulltimeAway }}</span>    </div>    <div class="away-name p-1" style="text-align: center;">      <span>{{ game.away }}</span>    </div>    <div class="away-logo-container p-1">      <img [src]="game.logoAway">    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasketballComponent', 'selector': 'app-basketball'},{'name': 'DataPrivacyComponent', 'selector': 'app-data-privacy'},{'name': 'FixturesComponent', 'selector': 'app-fixtures'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LeagueComponent', 'selector': 'app-league'},{'name': 'LegalNoticeComponent', 'selector': 'app-legal-notice'},{'name': 'MatchDetailsComponent', 'selector': 'app-match-details'},{'name': 'SoccerComponent', 'selector': 'app-soccer'},{'name': 'SportsComponent', 'selector': 'app-sports'},{'name': 'StartPageComponent', 'selector': 'app-start-page'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FixturesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FixturesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

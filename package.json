@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s"
   },
   "private": true,
   "dependencies": {
@@ -19,11 +22,12 @@
     "@angular/platform-browser": "~12.1.1",
     "@angular/platform-browser-dynamic": "~12.1.1",
     "@angular/router": "~12.1.1",
+    "@compodoc/compodoc": "^1.1.18",
     "bootstrap": "^5.0.2",
+    "firebase": "^7.0 || ^8.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4",
-    "firebase": "^7.0 || ^8.0"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.1",
